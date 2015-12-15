@@ -2,8 +2,7 @@ source ~/.zsh/zgen-setup
 source ~/.zsh/zsh-opts
 
 # Theme
-ZSH_THEME="monokai"
-BULLETTRAIN_HG_SHOW=false
+ZSH_THEME="pure"
 
 # Aliases
 alias ll='ls -l'

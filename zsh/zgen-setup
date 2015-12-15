@@ -6,7 +6,6 @@ if ! zgen saved; then
 
 	zgen oh-my-zsh
 
-  # plugins
   zgen oh-my-zsh plugins/git
   zgen oh-my-zsh plugins/sudo
   zgen oh-my-zsh plugins/mvn
@@ -17,13 +16,11 @@ if ! zgen saved; then
   zgen oh-my-zsh plugins/command-not-found
   zgen load zsh-users/zsh-syntax-highlighting
 	zgen load zsh-users/zsh-history-substring-search
+	zgen load mafredri/zsh-async
 
-  # completion-only repositories. Add optional path argument to specify
-  # what subdirectory of the repository to add to your fpath.
-  zgen completions zsh-users/zsh-completions src
-
-  # theme
-  zgen load caiogondim/bullet-train-oh-my-zsh-theme bullet-train
+  zgen load zsh-users/zsh-completions src
+	
+	zgen load sindresorhus/pure
 
   # save all to init script
   zgen save

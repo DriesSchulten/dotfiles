@@ -20,8 +20,8 @@ apps=(
 )
 
 cask_apps=(
-	Caskroom/cask/java
+	java
 )
 
 brew install "${apps[@]}"
-brew install "${cask_apps[@]}"
+brew cask install "${cask_apps[@]}"

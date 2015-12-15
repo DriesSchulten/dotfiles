@@ -1,0 +1,26 @@
+[color]
+	diff = true
+	status = auto
+	branch = auto
+	ui = true
+[user]
+	name = Dries Schulten
+	email = dries.schulten@gmail.com
+	signingkey = D8542D70
+[core]
+	editor = mate -w
+	excludesfile = /Users/dries/.gitignore_global
+[push]
+	default = simple
+[credential]
+	helper = osxkeychain
+[alias]
+	co = checkout
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit
+  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+[color]
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto

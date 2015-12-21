@@ -40,3 +40,8 @@ contents.xcworkspacedata
 
 # Git
 .gitreview
+
+# Ensime
+.ensime
+.ensime_cache/
+

@@ -11,7 +11,7 @@ alias l='ls -CF'
 alias fuck='$(thefuck $(fc -ln -1))'
 
 # Editor
-export EDITOR="/usr/local/bin/mate -w"
+export EDITOR="/usr/local/bin/atom"
 
 # Maven
 export MAVEN_OPTS="-Xmx1024m -Dfile.encoding=UTF-8 -Djava.awt.headless=true"

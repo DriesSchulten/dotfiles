@@ -1,0 +1,45 @@
+"*":
+  "exception-reporting":
+    userId: "059ecb2f-29bd-d51c-4583-eaeb4619355f"
+  welcome:
+    showOnStartup: false
+  core:
+    themes: [
+      "native-ui"
+      "slime"
+    ]
+    packagesWithKeymapsDisabled: [
+      "merge-conflicts"
+    ]
+    openEmptyEditorOnStart: false
+    disabledPackages: [
+      "spell-check"
+      "metrics"
+    ]
+  editor:
+    invisibles: {}
+    fontFamily: "Input Mono"
+    preferredLineLength: 120
+    useShadowDOM: false
+    fontSize: 10
+  Ensime:
+    sbtExec: "/usr/local/bin/sbt"
+    markImplicitsAutomatically: false
+    typecheckWhen: "save"
+  whitespace:
+    ensureSingleTrailingNewline: false
+  "merge-conflicts":
+    gitPath: "/usr/local/bin/git"
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  autosave:
+    enabled: true
+".scala.source":
+  editor:
+    preferredLineLength: 120
+".patch.source":
+  editor:
+    preferredLineLength: 120
+".ini.source":
+  editor:
+    preferredLineLength: 120

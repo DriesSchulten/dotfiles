@@ -14,6 +14,9 @@ DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # ZGen
 . "$DOTFILES_DIR/zgen.sh"
 
+# Atom
+. "$DOTFILES_DIR/atom.sh"
+
 # Link
 ln -sfv "$DOTFILES_DIR/git/.gitconfig" ~
 ln -sfv "$DOTFILES_DIR/git/.gitignore_global" ~

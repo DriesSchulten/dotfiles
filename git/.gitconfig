@@ -8,7 +8,7 @@
 	email = dries.schulten@gmail.com
 	signingkey = D8542D70
 [core]
-	editor = mate -w
+	editor = atom --wait
 	excludesfile = /Users/dries/.gitignore_global
 [push]
 	default = simple
@@ -24,3 +24,9 @@
   diff = auto
   interactive = auto
   status = auto
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

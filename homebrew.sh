@@ -21,6 +21,8 @@ apps=(
 
 cask_apps=(
 	java
+  iterm2
+  atom
 )
 
 brew install "${apps[@]}"

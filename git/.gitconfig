@@ -8,7 +8,7 @@
 	email = dries.schulten@gmail.com
 	signingkey = D8542D70
 [core]
-	editor = atom --wait
+	editor = mate -w
 	excludesfile = /Users/dries/.gitignore_global
 [push]
 	default = simple

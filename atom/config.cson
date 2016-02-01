@@ -1,45 +1,67 @@
 "*":
-  "exception-reporting":
-    userId: "059ecb2f-29bd-d51c-4583-eaeb4619355f"
-  welcome:
-    showOnStartup: false
+  Ensime:
+    markImplicitsAutomatically: false
+    sbtExec: "/usr/local/bin/sbt"
+    typecheckWhen: "save"
+  "autoclose-html": {}
+  autosave:
+    enabled: true
   core:
-    themes: [
-      "native-ui"
-      "slime"
-    ]
-    packagesWithKeymapsDisabled: [
-      "merge-conflicts"
-    ]
-    openEmptyEditorOnStart: false
     disabledPackages: [
       "spell-check"
       "metrics"
     ]
+    openEmptyEditorOnStart: false
+    packagesWithKeymapsDisabled: [
+      "merge-conflicts"
+    ]
+    themes: [
+      "native-ui"
+      "one-dark-syntax"
+    ]
   editor:
-    invisibles: {}
     fontFamily: "Input Mono"
-    preferredLineLength: 120
-    useShadowDOM: false
     fontSize: 10
-  Ensime:
-    sbtExec: "/usr/local/bin/sbt"
-    markImplicitsAutomatically: false
-    typecheckWhen: "save"
-  whitespace:
-    ensureSingleTrailingNewline: false
+    invisibles: {}
+    preferredLineLength: 120
+    softWrap: true
+  "exception-reporting":
+    userId: "059ecb2f-29bd-d51c-4583-eaeb4619355f"
   "merge-conflicts":
     gitPath: "/usr/local/bin/git"
   "tree-view":
     hideVcsIgnoredFiles: true
-  autosave:
-    enabled: true
-".scala.source":
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ensureSingleTrailingNewline: false
+".beamer.latex.tex.text":
+  editor:
+    preferredLineLength: 120
+".bibtex.text":
+  editor:
+    preferredLineLength: 120
+".groovy.source":
+  editor:
+    preferredLineLength: 120
+".ini.source":
+  editor:
+    preferredLineLength: 120
+".latex.log.text":
+  editor:
+    preferredLineLength: 120
+".latex.memoir.tex.text":
+  editor:
+    preferredLineLength: 120
+".latex.tex.text":
   editor:
     preferredLineLength: 120
 ".patch.source":
   editor:
     preferredLineLength: 120
-".ini.source":
+".scala.source":
+  editor:
+    preferredLineLength: 120
+".tex.text":
   editor:
     preferredLineLength: 120

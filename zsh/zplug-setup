@@ -8,11 +8,9 @@
 # Essential
 source ~/.zplug/zplug
 
-# Make sure to use double quotes to prevent shell expansion
-zplug "zsh-users/zsh-syntax-highlighting"
-
-# Add a bunch more of your favorite plugins!
-zplug "zsh-users/zsh-history-substring-search"
+# Plugins
+zplug "zsh-users/zsh-syntax-highlighting", nice:10
+zplug "zsh-users/zsh-history-substring-search", nice:11
 zplug "zsh-users/zsh-completions"
 zplug "peterhurford/git-it-on.zsh"
 zplug "mafredri/zsh-async"
@@ -25,16 +23,12 @@ zplug "plugins/brew-cask", from:oh-my-zsh
 zplug "plugins/os-x", from:oh-my-zsh
 zplug "plugins/command-not-found", from:oh-my-zsh
 
+# Theme
 zplug "sindresorhus/pure"
 
 # Install plugins that have not been installed yet
 if ! zplug check --verbose; then
-    printf "Install? [y/N]: "
-    if read -q; then
-        echo; zplug install
-    else
-        echo
-    fi
+  zplug install
 fi
 
 zplug load

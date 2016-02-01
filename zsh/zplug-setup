@@ -22,6 +22,8 @@ zplug "plugins/brew", from:oh-my-zsh
 zplug "plugins/brew-cask", from:oh-my-zsh
 zplug "plugins/os-x", from:oh-my-zsh
 zplug "plugins/command-not-found", from:oh-my-zsh
+zplug "junegunn/fzf-bin", as:command, from:gh-r, file:"fzf"
+zplug "b4b4r07/enhancd", of:enhancd.sh
 
 # Theme
 zplug "sindresorhus/pure"

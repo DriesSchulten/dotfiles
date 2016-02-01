@@ -1,0 +1,40 @@
+#!/bin/sh
+# Check if zplug is installed
+[[ -d ~/.zplug ]] || {
+  curl -fLo ~/.zplug/zplug --create-dirs https://git.io/zplug
+  source ~/.zplug/zplug && zplug update --self
+}
+
+# Essential
+source ~/.zplug/zplug
+
+# Make sure to use double quotes to prevent shell expansion
+zplug "zsh-users/zsh-syntax-highlighting"
+
+# Add a bunch more of your favorite plugins!
+zplug "zsh-users/zsh-history-substring-search"
+zplug "zsh-users/zsh-completions"
+zplug "peterhurford/git-it-on.zsh"
+zplug "mafredri/zsh-async"
+zplug "plugins/git", from:oh-my-zsh
+zplug "plugins/sudo", from:oh-my-zsh
+zplug "plugins/mvn", from:oh-my-zsh
+zplug "plugins/gradle", from:oh-my-zsh
+zplug "plugins/brew", from:oh-my-zsh
+zplug "plugins/brew-cask", from:oh-my-zsh
+zplug "plugins/os-x", from:oh-my-zsh
+zplug "plugins/command-not-found", from:oh-my-zsh
+
+zplug "sindresorhus/pure"
+
+# Install plugins that have not been installed yet
+if ! zplug check --verbose; then
+    printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    else
+        echo
+    fi
+fi
+
+zplug load

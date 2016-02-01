@@ -1,4 +1,4 @@
-source ~/.zsh/zgen-setup
+source ~/.zsh/zplug-setup
 source ~/.zsh/zsh-opts
 
 # Theme

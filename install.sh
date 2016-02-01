@@ -11,9 +11,6 @@ DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # Install ZSH
 . "$DOTFILES_DIR/zsh.sh"
 
-# ZGen
-. "$DOTFILES_DIR/zgen.sh"
-
 # Atom
 . "$DOTFILES_DIR/atom.sh"
 
@@ -22,5 +19,5 @@ ln -sfv "$DOTFILES_DIR/git/.gitconfig" ~
 ln -sfv "$DOTFILES_DIR/git/.gitignore_global" ~
 
 ln -sfv "$DOTFILES_DIR/zsh/.zshrc" ~
-ln -sfv "$DOTFILES_DIR/zsh/zgen-setup" ~/.zsh
+ln -sfv "$DOTFILES_DIR/zsh/zplug-setup" ~/.zsh
 ln -sfv "$DOTFILES_DIR/zsh/zsh-opts" ~/.zsh

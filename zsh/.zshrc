@@ -23,8 +23,11 @@ export ANT_OPTS="-Xmx1024m"
 export ANDROID_HOME="/Users/dries/Tools/android-sdk-macosx"
 
 # Java
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/1.8/Contents/Home
 export JAVA_OPTS="-Dfile.encoding=UTF-8"
+export JAVA8_HOME=/Library/Java/JavaVirtualMachines/1.8/Contents/Home
+export JAVA7_HOME=/Library/Java/JavaVirtualMachines/1.7/Contents/Home
+export JAVA6_HOME=/Library/Java/JavaVirtualMachines/1.6/Contents/Home
+export JAVA_HOME=$JAVA8_HOME
 
 # Activator
 export ACTIVATOR_OPTS="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=9999"

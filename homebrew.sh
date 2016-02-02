@@ -2,6 +2,7 @@
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew tap caskroom/cask
+brew tap caskroom/versions
 
 apps=(
   pam_yubico
@@ -17,10 +18,12 @@ apps=(
   maven
   sbt
   node
+  jenv
 )
 
 cask_apps=(
 	java
+  java7
   iterm2
   atom
 )

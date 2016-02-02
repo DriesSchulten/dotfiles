@@ -14,10 +14,14 @@ DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # Atom
 . "$DOTFILES_DIR/atom.sh"
 
+# JEnv
+. "$DOTFILES_DIR/jenv.sh"
+
 # Link
 ln -sfv "$DOTFILES_DIR/git/.gitconfig" ~
 ln -sfv "$DOTFILES_DIR/git/.gitignore_global" ~
 
 ln -sfv "$DOTFILES_DIR/zsh/.zshrc" ~
-ln -sfv "$DOTFILES_DIR/zsh/zplug-setup" ~/.zsh
-ln -sfv "$DOTFILES_DIR/zsh/zsh-opts" ~/.zsh
+ln -sfv "$DOTFILES_DIR/zsh/zplug-setup.zsh" ~/.zsh
+ln -sfv "$DOTFILES_DIR/zsh/zsh-opts.zsh" ~/.zsh
+ln -sfv "$DOTFILES_DIR/zsh/java.zsh" ~/.zsh

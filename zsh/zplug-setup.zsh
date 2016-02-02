@@ -8,6 +8,8 @@
 # Essential
 source ~/.zplug/zplug
 
+zplug "b4b4r07/zplug"
+
 # Plugins
 zplug "zsh-users/zsh-syntax-highlighting", nice:10
 zplug "zsh-users/zsh-history-substring-search", nice:11

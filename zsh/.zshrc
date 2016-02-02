@@ -1,5 +1,6 @@
-source ~/.zsh/zplug-setup
-source ~/.zsh/zsh-opts
+source ~/.zsh/zplug-setup.zsh
+source ~/.zsh/zsh-opts.zsh
+source ~/.zsh/java.zsh
 
 # Theme
 ZSH_THEME="pure"
@@ -12,25 +13,6 @@ alias fuck='$(thefuck $(fc -ln -1))'
 
 # Editor
 export EDITOR="/usr/local/bin/atom"
-
-# Maven
-export MAVEN_OPTS="-Xmx1024m -Dfile.encoding=UTF-8 -Djava.awt.headless=true"
-
-# Ant
-export ANT_OPTS="-Xmx1024m"
-
-# Android
-export ANDROID_HOME="/Users/dries/Tools/android-sdk-macosx"
-
-# Java
-export JAVA_OPTS="-Dfile.encoding=UTF-8"
-export JAVA8_HOME=/Library/Java/JavaVirtualMachines/1.8/Contents/Home
-export JAVA7_HOME=/Library/Java/JavaVirtualMachines/1.7/Contents/Home
-export JAVA6_HOME=/Library/Java/JavaVirtualMachines/1.6/Contents/Home
-export JAVA_HOME=$JAVA8_HOME
-
-# Activator
-export ACTIVATOR_OPTS="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=9999"
 
 # Ruby gems
 export GEM_HOME=$HOME/.gem

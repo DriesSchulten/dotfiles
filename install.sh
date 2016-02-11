@@ -24,4 +24,4 @@ ln -sfv "$DOTFILES_DIR/git/.gitignore_global" ~
 ln -sfv "$DOTFILES_DIR/zsh/.zshrc" ~
 ln -sfv "$DOTFILES_DIR/zsh/zplug-setup.zsh" ~/.zsh
 ln -sfv "$DOTFILES_DIR/zsh/zsh-opts.zsh" ~/.zsh
-ln -sfv "$DOTFILES_DIR/zsh/java.zsh" ~/.zsh
+ln -sfv "$DOTFILES_DIR/zsh/conf" ~/.zsh

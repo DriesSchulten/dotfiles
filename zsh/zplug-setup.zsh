@@ -27,6 +27,9 @@ zplug "plugins/command-not-found", from:oh-my-zsh
 zplug "junegunn/fzf-bin", as:command, from:gh-r, file:"fzf"
 zplug "b4b4r07/enhancd", of:enhancd.sh
 
+# Local plugins
+zplug "~/.zsh/conf", from:local, nice:12
+
 # Theme
 zplug "sindresorhus/pure"
 

@@ -19,6 +19,7 @@ apps=(
   sbt
   node
   jenv
+  android-sdk
 )
 
 cask_apps=(

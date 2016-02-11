@@ -1,6 +1,5 @@
 source ~/.zsh/zplug-setup.zsh
 source ~/.zsh/zsh-opts.zsh
-source ~/.zsh/java.zsh
 
 # Theme
 ZSH_THEME="pure"

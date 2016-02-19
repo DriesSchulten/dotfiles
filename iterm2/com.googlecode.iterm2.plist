@@ -307,6 +307,8 @@
 	<string></string>
 	<key>NSScrollAnimationEnabled</key>
 	<false/>
+	<key>NSScrollViewShouldScrollUnderTitlebar</key>
+	<false/>
 	<key>NSTableView Columns KeyBingingTable</key>
 	<array>
 		<data>
@@ -318,7 +320,7 @@
 		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
 		hAErATGG
 		</data>
-		<string>302</string>
+		<string>322</string>
 	</array>
 	<key>NSTableView Hidden Columns KeyBingingTable</key>
 	<array/>
@@ -338,11 +340,11 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>769 357 445 270 0 0 1920 1080 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>232 504 924 485 0 0 1920 1177 </string>
+	<string>232 533 606 456 0 0 1920 1177 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>768 697 384 129 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>793 171 1060 726 0 0 1920 1177 </string>
+	<string>761 383 1060 748 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>687 132 1060 726 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -2466,10 +2468,16 @@
 			<string>/Users/dries</string>
 		</dict>
 	</array>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
+	<true/>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
+	<integer>0</integer>
+	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
+	<real>477560106.21365201</real>
 	<key>NoSyncTimeOfLastPromo</key>
 	<real>453209171.346223</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>471714654.35286897</real>
+	<real>477430418.19793302</real>
 	<key>NotFirstRun</key>
 	<true/>
 	<key>OnlyWhenMoreTabs</key>
@@ -2533,12 +2541,14 @@
 	<integer>3</integer>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
+	<key>SUFeedAlternateAppNameKey</key>
+	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/testing.xml</string>
+	<string>https://iterm2.com/appcasts/testing3.xml</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-12-15T10:48:21Z</date>
+	<date>2016-02-19T07:35:05Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -2586,6 +2596,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.1.4</string>
+	<string>2.9.20160206</string>
 </dict>
 </plist>

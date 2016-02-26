@@ -10,21 +10,25 @@ alias la='ls -A'
 alias l='ls -CF'
 alias fuck='$(thefuck $(fc -ln -1))'
 
-# Editor
-export EDITOR="/usr/local/bin/atom"
+if [[ $OSTYPE == *darwin* ]]; then
+  # Editor
+  export EDITOR="/usr/local/bin/atom"
 
-# Ruby gems
-export GEM_HOME=$HOME/.gem
+  # Ruby gems
+  export GEM_HOME=$HOME/.gem
 
-# GO
-export PATH=$PATH:/usr/local/opt/go/libexec/bin
+  # GO
+  export PATH=$PATH:/usr/local/opt/go/libexec/bin
 
-# MAMP
-export PATH=/Applications/MAMP/bin/php/php5.6.10/bin:$PATH
+  # MAMP
+  export PATH=/Applications/MAMP/bin/php/php5.6.10/bin:$PATH
 
-# Pad
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools:$GEM_HOME/bin:$PATH
+  # Pad
+  export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools:$GEM_HOME/bin:$PATH
 
-# PostgreSQL
-alias pg_start='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
-alias pg_stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
+  # PostgreSQL
+  alias pg_start='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
+  alias pg_stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
+else
+  export EDITOR="/usr/bin/vim"
+fi

@@ -20,15 +20,15 @@ zplug "plugins/git", from:oh-my-zsh
 zplug "plugins/sudo", from:oh-my-zsh
 zplug "plugins/mvn", from:oh-my-zsh
 zplug "plugins/gradle", from:oh-my-zsh
-zplug "plugins/brew", from:oh-my-zsh
-zplug "plugins/brew-cask", from:oh-my-zsh
-zplug "plugins/os-x", from:oh-my-zsh
+zplug "plugins/brew", from:oh-my-zsh, if:"[[ $OSTYPE == *darwin* ]]"
+zplug "plugins/brew-cask", from:oh-my-zsh, if:"[[ $OSTYPE == *darwin* ]]"
+zplug "plugins/os-x", from:oh-my-zsh, if:"[[ $OSTYPE == *darwin* ]]"
 zplug "plugins/command-not-found", from:oh-my-zsh
 zplug "junegunn/fzf-bin", as:command, from:gh-r, file:"fzf"
 zplug "b4b4r07/enhancd", of:enhancd.sh
 
 # Local plugins
-zplug "~/.zsh/conf", from:local, nice:12
+zplug "~/.zsh/conf", from:local, nice:12, if:"[[ $OSTYPE == *darwin* ]]"
 
 # Theme
 zplug "sindresorhus/pure"

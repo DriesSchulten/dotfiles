@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 export DOTFILES_DIR
 DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
@@ -28,6 +28,7 @@ ln -sfv "$DOTFILES_DIR/git/.gitconfig" ~
 ln -sfv "$DOTFILES_DIR/git/.gitignore_global" ~
 
 ln -sfv "$DOTFILES_DIR/zsh/.zshrc" ~
-ln -sfv "$DOTFILES_DIR/zsh/zplug-setup.zsh" ~/.zsh
-ln -sfv "$DOTFILES_DIR/zsh/zsh-opts.zsh" ~/.zsh
-ln -sfv "$DOTFILES_DIR/zsh/conf" ~/.zsh
+mkdir ~/.zsh
+ln -sfv "$DOTFILES_DIR/zsh/zplug-setup.zsh" ~/.zsh/
+ln -sfv "$DOTFILES_DIR/zsh/zsh-opts.zsh" ~/.zsh/
+ln -sfv "$DOTFILES_DIR/zsh/conf" ~/.zsh/

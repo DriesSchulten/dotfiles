@@ -11,7 +11,7 @@ if [[ $OSTYPE == *darwin* ]]; then
   . "$DOTFILES_DIR/homebrew.sh"
 
   # Install ZSH
-  . "$DOTFILES_DIR/zsh.sh"
+  . "$DOTFILES_DIR/zsh.mac.sh"
 
   # Atom
   . "$DOTFILES_DIR/atom.sh"
@@ -19,7 +19,8 @@ if [[ $OSTYPE == *darwin* ]]; then
   # JEnv
   . "$DOTFILES_DIR/jenv.sh"
 else
-  
+  # Install/set ZSH
+  . "$DOTFILES_DIR/zsh.linux.sh"
 fi
 
 # Link

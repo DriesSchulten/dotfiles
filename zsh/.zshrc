@@ -10,6 +10,8 @@ alias la='ls -A'
 alias l='ls -CF'
 alias fuck='$(thefuck $(fc -ln -1))'
 
+export THEFUCK_REQUIRE_CONFIRMATION=false
+
 if [[ $OSTYPE == *darwin* ]]; then
   # Editor
   export EDITOR="/usr/local/bin/atom"

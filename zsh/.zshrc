@@ -33,4 +33,6 @@ if [[ $OSTYPE == *darwin* ]]; then
   alias pg_stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 else
   export EDITOR="/usr/bin/vim"
+
+  [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 fi

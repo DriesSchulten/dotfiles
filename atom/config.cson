@@ -6,12 +6,15 @@
   "autoclose-html": {}
   autosave:
     enabled: true
+  "browser-plus": {}
+  "close-tags": {}
   core:
     disabledPackages: [
-      "spell-check"
       "metrics"
+      "timecop"
+      "styleguide"
+      "package-generator"
     ]
-    openEmptyEditorOnStart: false
     packagesWithKeymapsDisabled: [
       "merge-conflicts"
     ]
@@ -27,14 +30,26 @@
     softWrap: true
   "exception-reporting":
     userId: "059ecb2f-29bd-d51c-4583-eaeb4619355f"
+  latex:
+    outputDirectory: ".texpadtmp"
   "merge-conflicts":
     gitPath: "/usr/local/bin/git"
+  "spell-check":
+    grammars: [
+      "text.plain"
+      "text.tex.latex"
+    ]
   "tree-view":
     hideVcsIgnoredFiles: true
+  "vim-mode": {}
   welcome:
     showOnStartup: false
   whitespace:
     ensureSingleTrailingNewline: false
+  wordcount:
+    extensions: [
+      "tex"
+    ]
 ".beamer.latex.tex.text":
   editor:
     preferredLineLength: 120

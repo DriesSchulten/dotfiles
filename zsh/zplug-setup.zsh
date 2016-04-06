@@ -16,14 +16,18 @@ zplug "zsh-users/zsh-history-substring-search", nice:11
 zplug "zsh-users/zsh-completions"
 zplug "peterhurford/git-it-on.zsh"
 zplug "mafredri/zsh-async"
-zplug "plugins/git", from:oh-my-zsh
-zplug "plugins/sudo", from:oh-my-zsh
-zplug "plugins/mvn", from:oh-my-zsh
-zplug "plugins/gradle", from:oh-my-zsh
-zplug "plugins/brew", from:oh-my-zsh, if:"[[ $OSTYPE == *darwin* ]]"
-zplug "plugins/brew-cask", from:oh-my-zsh, if:"[[ $OSTYPE == *darwin* ]]"
-zplug "plugins/os-x", from:oh-my-zsh, if:"[[ $OSTYPE == *darwin* ]]"
-zplug "plugins/command-not-found", from:oh-my-zsh
+zplug "lib/git", from:oh-my-zsh, ignore:oh-my-zsh.sh
+zplug "lib/key-bindings", from:oh-my-zsh, ignore:oh-my-zsh.sh
+zplug "lib/completion", from:oh-my-zsh, ignore:oh-my-zsh.sh
+zplug "plugins/git", from:oh-my-zsh, ignore:oh-my-zsh.sh
+zplug "plugins/sudo", from:oh-my-zsh, ignore:oh-my-zsh.sh
+zplug "plugins/mvn", from:oh-my-zsh, ignore:oh-my-zsh.sh
+zplug "plugins/gradle", from:oh-my-zsh, ignore:oh-my-zsh.sh
+zplug "plugins/docker", from:oh-my-zsh, ignore:oh-my-zsh.sh
+zplug "plugins/brew", from:oh-my-zsh, if:"[[ $OSTYPE == *darwin* ]]", ignore:oh-my-zsh.sh
+zplug "plugins/brew-cask", from:oh-my-zsh, if:"[[ $OSTYPE == *darwin* ]]", ignore:oh-my-zsh.sh
+zplug "plugins/os-x", from:oh-my-zsh, if:"[[ $OSTYPE == *darwin* ]]", ignore:oh-my-zsh.sh
+zplug "plugins/command-not-found", from:oh-my-zsh, ignore:oh-my-zsh.sh
 zplug "junegunn/fzf-bin", as:command, from:gh-r, file:"fzf"
 zplug "b4b4r07/enhancd", of:enhancd.sh
 

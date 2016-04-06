@@ -9,6 +9,7 @@
   "browser-plus": {}
   "close-tags": {}
   core:
+    audioBeep: false
     disabledPackages: [
       "metrics"
       "timecop"
@@ -30,6 +31,8 @@
     softWrap: true
   "exception-reporting":
     userId: "059ecb2f-29bd-d51c-4583-eaeb4619355f"
+  "file-icons":
+    forceShow: true
   latex:
     outputDirectory: ".texpadtmp"
   "merge-conflicts":

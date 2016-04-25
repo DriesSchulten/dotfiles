@@ -7,3 +7,5 @@ tail -n +2 /tmp/jvms.$$ | cut -f 3 | while read JVM_PATH ; do
 done
 
 rm /tmp/jvms.$$
+
+jenv enable-plugin export

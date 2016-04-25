@@ -30,6 +30,7 @@ if [[ $OSTYPE == *darwin* ]]; then
 else
   export EDITOR="/usr/bin/vim"
   export PURE_PROMPT_SYMBOL="»"
+  export PATH="$PATH:$HOME/.rvm/bin"
 
   [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 fi

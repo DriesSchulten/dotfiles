@@ -37,6 +37,7 @@
     outputDirectory: ".texpadtmp"
   "merge-conflicts":
     gitPath: "/usr/local/bin/git"
+  "remote-atom": {}
   "spell-check":
     grammars: [
       "text.plain"

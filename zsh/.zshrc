@@ -29,7 +29,6 @@ if [[ $OSTYPE == *darwin* ]]; then
   export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools:$GEM_HOME/bin:$PATH
 else
   export EDITOR="/usr/bin/vim"
-  export PURE_PROMPT_SYMBOL="»"
   export PATH="$PATH:$HOME/.rvm/bin"
 
   [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

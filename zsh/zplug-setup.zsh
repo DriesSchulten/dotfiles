@@ -24,6 +24,7 @@ zplug "plugins/sudo", from:oh-my-zsh, ignore:oh-my-zsh.sh
 zplug "plugins/mvn", from:oh-my-zsh, ignore:oh-my-zsh.sh
 zplug "plugins/gradle", from:oh-my-zsh, ignore:oh-my-zsh.sh
 zplug "plugins/docker", from:oh-my-zsh, ignore:oh-my-zsh.sh
+zplug "plugins/aws", from:oh-my-zsh, ignore:oh-my-zsh.sh
 zplug "plugins/brew", from:oh-my-zsh, if:"[[ $OSTYPE == *darwin* ]]", ignore:oh-my-zsh.sh
 zplug "plugins/brew-cask", from:oh-my-zsh, if:"[[ $OSTYPE == *darwin* ]]", ignore:oh-my-zsh.sh
 zplug "plugins/os-x", from:oh-my-zsh, if:"[[ $OSTYPE == *darwin* ]]", ignore:oh-my-zsh.sh

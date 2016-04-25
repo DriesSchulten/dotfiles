@@ -27,12 +27,9 @@ if [[ $OSTYPE == *darwin* ]]; then
 
   # Pad
   export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools:$GEM_HOME/bin:$PATH
-
-  # PostgreSQL
-  alias pg_start='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
-  alias pg_stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 else
   export EDITOR="/usr/bin/vim"
+  export PURE_PROMPT_SYMBOL="»"
 
   [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 fi

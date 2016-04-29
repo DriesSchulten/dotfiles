@@ -1,39 +1,37 @@
-#!/bin/sh
+#!/bin/zsh
 # Check if zplug is installed
 [[ -d ~/.zplug ]] || {
-  curl -fLo ~/.zplug/zplug --create-dirs https://git.io/zplug
-  source ~/.zplug/zplug && zplug update --self
+  git clone https://github.com/b4b4r07/zplug ~/.zplug
+  source ~/.zplug/init.zsh && zplug update --self
 }
 
+# Define OS
+local OSX="[[ $OSTYPE == *darwin* ]]"
+
 # Essential
-source ~/.zplug/zplug
+source ~/.zplug/init.zsh
 
 zplug "b4b4r07/zplug"
 
 # Plugins
 zplug "zsh-users/zsh-syntax-highlighting", nice:10
-zplug "zsh-users/zsh-history-substring-search", nice:11
+zplug "zsh-users/zsh-history-substring-search"
 zplug "zsh-users/zsh-completions"
 zplug "peterhurford/git-it-on.zsh"
 zplug "mafredri/zsh-async"
-zplug "lib/git", from:oh-my-zsh, ignore:oh-my-zsh.sh
-zplug "lib/key-bindings", from:oh-my-zsh, ignore:oh-my-zsh.sh
-zplug "lib/completion", from:oh-my-zsh, ignore:oh-my-zsh.sh
-zplug "plugins/git", from:oh-my-zsh, ignore:oh-my-zsh.sh
-zplug "plugins/sudo", from:oh-my-zsh, ignore:oh-my-zsh.sh
-zplug "plugins/mvn", from:oh-my-zsh, ignore:oh-my-zsh.sh
-zplug "plugins/gradle", from:oh-my-zsh, ignore:oh-my-zsh.sh
-zplug "plugins/docker", from:oh-my-zsh, ignore:oh-my-zsh.sh
-zplug "plugins/aws", from:oh-my-zsh, ignore:oh-my-zsh.sh
-zplug "plugins/brew", from:oh-my-zsh, if:"[[ $OSTYPE == *darwin* ]]", ignore:oh-my-zsh.sh
-zplug "plugins/brew-cask", from:oh-my-zsh, if:"[[ $OSTYPE == *darwin* ]]", ignore:oh-my-zsh.sh
-zplug "plugins/os-x", from:oh-my-zsh, if:"[[ $OSTYPE == *darwin* ]]", ignore:oh-my-zsh.sh
-zplug "plugins/command-not-found", from:oh-my-zsh, ignore:oh-my-zsh.sh
-zplug "junegunn/fzf-bin", as:command, from:gh-r, file:"fzf"
-zplug "b4b4r07/enhancd", of:enhancd.sh
+zplug "lib/key-bindings", from:oh-my-zsh
+zplug "lib/completion", from:oh-my-zsh
+zplug "plugins/sudo", from:oh-my-zsh
+zplug "plugins/gradle", from:oh-my-zsh, nice:10
+zplug "plugins/docker", from:oh-my-zsh
+zplug "plugins/brew", from:oh-my-zsh, if:$OSX
+zplug "plugins/brew-cask", from:oh-my-zsh, if:$OSX, nice:10
+zplug "plugins/osx", from:oh-my-zsh, if:$OSX
+zplug "junegunn/fzf-bin", as:command, from:gh-r, rename-to:"fzf"
+zplug "b4b4r07/enhancd", use:enhancd.sh
 
 # Local plugins
-zplug "~/.zsh/conf", from:local, nice:12, if:"[[ $OSTYPE == *darwin* ]]"
+zplug "~/.zsh/conf", from:local, nice:12, if:$OSX
 
 # Theme
 zplug "sindresorhus/pure"

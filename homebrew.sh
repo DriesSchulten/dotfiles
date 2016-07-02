@@ -5,7 +5,6 @@ brew tap caskroom/cask
 brew tap caskroom/versions
 
 apps=(
-  pam_yubico
   thefuck
   htop-osx
   vim

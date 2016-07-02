@@ -349,11 +349,13 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>769 357 445 270 0 0 1920 1080 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>120 376 606 456 0 0 1920 1177 </string>
+	<string>120 695 606 456 0 0 1920 1177 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>760 787 400 129 0 0 1920 1177 </string>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>650 589 620 392 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>146 107 1060 727 0 0 1920 1177 </string>
+	<string>237 391 1060 727 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>687 118 1060 727 0 0 1920 1177 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -745,6 +747,13 @@
 					<key>Text</key>
 					<string>[1;6D</string>
 				</dict>
+				<key>0xf702-0x280000</key>
+				<dict>
+					<key>Action</key>
+					<integer>10</integer>
+					<key>Text</key>
+					<string>b</string>
+				</dict>
 				<key>0xf703-0x220000</key>
 				<dict>
 					<key>Action</key>
@@ -765,6 +774,13 @@
 					<integer>10</integer>
 					<key>Text</key>
 					<string>[1;6C</string>
+				</dict>
+				<key>0xf703-0x280000</key>
+				<dict>
+					<key>Action</key>
+					<integer>10</integer>
+					<key>Text</key>
+					<string>f</string>
 				</dict>
 				<key>0xf704-0x20000</key>
 				<dict>
@@ -894,7 +910,7 @@
 			<key>Normal Font</key>
 			<string>InputMono-Regular 11</string>
 			<key>Option Key Sends</key>
-			<integer>0</integer>
+			<integer>2</integer>
 			<key>Prompt Before Closing 2</key>
 			<integer>0</integer>
 			<key>Right Option Key Sends</key>
@@ -2477,10 +2493,16 @@
 			<string>/Users/dries</string>
 		</dict>
 	</array>
+	<key>NoSyncConfirmBeta</key>
+	<true/>
 	<key>NoSyncDoNotWarnBeforeMultilinePaste</key>
 	<true/>
 	<key>NoSyncDoNotWarnBeforeMultilinePaste_selection</key>
 	<integer>0</integer>
+	<key>NoSyncInstallationId</key>
+	<string>F883A618-DEA7-43DF-B7A1-162AE72641BE</string>
+	<key>NoSyncLastTipTime</key>
+	<real>479230205.00271702</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2495,6 +2517,17 @@
 	<real>453209171.346223</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
 	<real>477430418.19793302</real>
+	<key>NoSyncTipsDisabled</key>
+	<true/>
+	<key>NoSyncTipsToNotShow</key>
+	<array>
+		<string>000</string>
+		<string>0000</string>
+		<string>0000</string>
+		<string>0001</string>
+		<string>0002</string>
+		<string>0003</string>
+	</array>
 	<key>NotFirstRun</key>
 	<true/>
 	<key>OnlyWhenMoreTabs</key>
@@ -2546,6 +2579,8 @@
 	</dict>
 	<key>PrefsCustomFolder</key>
 	<string>/Users/dries/.dotfiles/iterm2</string>
+	<key>Print In Black And White</key>
+	<true/>
 	<key>PromptOnClose</key>
 	<true/>
 	<key>PromptOnQuit</key>
@@ -2561,11 +2596,11 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/testing3.xml</string>
+	<string>https://iterm2.com/appcasts/testing3.xml?shard=85</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-03-02T20:59:53Z</date>
+	<date>2016-06-29T08:57:47Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -2581,7 +2616,7 @@
 	<key>SwitchTabModifier</key>
 	<integer>4</integer>
 	<key>SwitchWindowModifier</key>
-	<integer>6</integer>
+	<integer>9</integer>
 	<key>TabViewType</key>
 	<integer>0</integer>
 	<key>ThreeFingerEmulates</key>
@@ -2613,6 +2648,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.9.20160206</string>
+	<string>3.0.3</string>
 </dict>
 </plist>

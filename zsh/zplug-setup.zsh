@@ -27,8 +27,7 @@ zplug "plugins/docker", from:oh-my-zsh
 zplug "plugins/brew", from:oh-my-zsh, if:$OSX
 zplug "plugins/brew-cask", from:oh-my-zsh, if:$OSX, nice:10
 zplug "plugins/osx", from:oh-my-zsh, if:$OSX, nice:10
-zplug "junegunn/fzf-bin", as:command, from:gh-r, rename-to:"fzf"
-zplug "b4b4r07/enhancd", use:init.sh, nice:10
+zplug "b4b4r07/enhancd", use:init.sh
 
 # Local plugins
 zplug "~/.zsh/conf", from:local, nice:12, if:$OSX

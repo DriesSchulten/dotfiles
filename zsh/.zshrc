@@ -1,3 +1,4 @@
+source ~/.zsh/fzf-setup.zsh
 source ~/.zsh/zplug-setup.zsh
 source ~/.zsh/zsh-opts.zsh
 
@@ -30,6 +31,4 @@ if [[ $OSTYPE == *darwin* ]]; then
 else
   export EDITOR="/usr/bin/vim"
   export PATH="$PATH:$HOME/.rvm/bin"
-
-  [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 fi

@@ -54,6 +54,9 @@
     extensions: [
       "tex"
     ]
+".Kotlin.source":
+  editor:
+    preferredLineLength: 120
 ".beamer.latex.tex.text":
   editor:
     preferredLineLength: 120

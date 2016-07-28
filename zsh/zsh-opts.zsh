@@ -31,3 +31,4 @@ bindkey "$terminfo[kcud1]" history-substring-search-down
 if [[ -f /usr/local/share/zsh/site-functions/_aws ]]; then
   source /usr/local/share/zsh/site-functions/_aws
 fi
+

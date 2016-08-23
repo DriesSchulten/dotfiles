@@ -12,9 +12,10 @@
     audioBeep: false
     disabledPackages: [
       "metrics"
-      "timecop"
       "styleguide"
       "package-generator"
+      "atom-typescript"
+      "Ensime"
     ]
     packagesWithKeymapsDisabled: [
       "merge-conflicts"
@@ -63,6 +64,12 @@
 ".bibtex.text":
   editor:
     preferredLineLength: 120
+".dockerfile.source":
+  editor:
+    preferredLineLength: 120
+".dockerignore.source":
+  editor:
+    preferredLineLength: 120
 ".groovy.source":
   editor:
     preferredLineLength: 120
@@ -82,6 +89,12 @@
   editor:
     preferredLineLength: 120
 ".scala.source":
+  editor:
+    preferredLineLength: 120
+".source.ts":
+  editor:
+    preferredLineLength: 120
+".source.tsx":
   editor:
     preferredLineLength: 120
 ".tex.text":

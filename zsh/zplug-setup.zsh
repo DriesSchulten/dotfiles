@@ -1,8 +1,10 @@
 #!/bin/zsh
 # Check if zplug is installed
+local is_installed=true
 [[ -d ~/.zplug ]] || {
   git clone https://github.com/zplug/zplug ~/.zplug
   source ~/.zplug/init.zsh && zplug update --self
+  is_installed=false
 }
 
 # Define OS
@@ -36,7 +38,7 @@ zplug "~/.zsh/conf", from:local, nice:12, if:$OSX
 zplug "sindresorhus/pure"
 
 # Install plugins that have not been installed yet
-if ! zplug check --verbose; then
+if ! $is_installed; then
   zplug install
 fi
 

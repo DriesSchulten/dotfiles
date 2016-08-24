@@ -1,7 +1,7 @@
 #!/bin/zsh
 # Check if zplug is installed
 [[ -d ~/.zplug ]] || {
-  git clone https://github.com/b4b4r07/zplug ~/.zplug
+  git clone https://github.com/zplug/zplug ~/.zplug
   source ~/.zplug/init.zsh && zplug update --self
 }
 
@@ -11,7 +11,7 @@ local OSX="[[ $OSTYPE == *darwin* ]]"
 # Essential
 source ~/.zplug/init.zsh
 
-zplug "b4b4r07/zplug"
+zplug "zplug/zplug"
 
 # Plugins
 zplug "zsh-users/zsh-syntax-highlighting", nice:10

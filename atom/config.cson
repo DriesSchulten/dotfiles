@@ -58,6 +58,9 @@
 ".Kotlin.source":
   editor:
     preferredLineLength: 120
+".attribute-values.js.jsx.source":
+  editor:
+    preferredLineLength: 120
 ".beamer.latex.tex.text":
   editor:
     preferredLineLength: 120
@@ -74,6 +77,15 @@
   editor:
     preferredLineLength: 120
 ".ini.source":
+  editor:
+    preferredLineLength: 120
+".js.jsx.react.source":
+  editor:
+    preferredLineLength: 120
+".js.jsx.source":
+  editor:
+    preferredLineLength: 120
+".js.source.subtlegradient":
   editor:
     preferredLineLength: 120
 ".latex.log.text":

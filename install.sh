@@ -27,6 +27,8 @@ fi
 ln -sfv "$DOTFILES_DIR/git/.gitconfig" ~
 ln -sfv "$DOTFILES_DIR/git/.gitignore_global" ~
 
+ln -sfv "$DOTFILES_DIR/vim/.vimrc" ~
+
 ln -sfv "$DOTFILES_DIR/zsh/.zshrc" ~
 mkdir ~/.zsh
 ln -sfv "$DOTFILES_DIR/zsh/zplug-setup.zsh" ~/.zsh/

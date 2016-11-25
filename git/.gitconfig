@@ -5,10 +5,10 @@
 	ui = true
 [user]
 	name = Dries Schulten
-	email = dries.schulten@gmail.com
+	email = dries.schulten@fastmail.com
 	signingkey = D8542D70
 [core]
-	editor = atom --wait
+	editor = vim
 	excludesfile = /Users/dries/.gitignore_global
 [push]
 	default = simple
@@ -19,16 +19,18 @@
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	st = status --short --branch
 [color]
   branch = auto
   diff = auto
   interactive = auto
   status = auto
+[commit]
+  gpgsign = true
+	template = /Users/dries/.stCommitMsg
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
-[commit]
-	template = /Users/dries/.stCommitMsg

@@ -14,12 +14,12 @@
       "metrics"
       "styleguide"
       "package-generator"
-      "atom-typescript"
       "Ensime"
     ]
     packagesWithKeymapsDisabled: [
       "merge-conflicts"
     ]
+    telemetryConsent: "no"
     themes: [
       "native-ui"
       "one-dark-syntax"

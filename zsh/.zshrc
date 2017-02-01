@@ -29,3 +29,6 @@ else
   export EDITOR="/usr/bin/vim"
   export PATH="$PATH:$HOME/.rvm/bin"
 fi
+
+# added by travis gem
+[ -f /Users/dries/.travis/travis.sh ] && source /Users/dries/.travis/travis.sh

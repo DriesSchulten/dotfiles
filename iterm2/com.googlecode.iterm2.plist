@@ -363,11 +363,11 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>650 590 620 392 0 0 1920 1178 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>520 327 796 473 0 0 1920 1178 </string>
+	<string>520 461 796 473 0 0 1920 1178 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>167 242 1200 867 0 0 1920 1178 </string>
+	<string>336 150 1200 867 0 0 1920 1178 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>563 149 1215 867 0 0 1920 1178 </string>
+	<string>563 149 1200 867 0 0 1920 1178 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>204 45 990 611 0 0 1920 1058 </string>
 	<key>NeverWarnAboutShortLivedSessions_8FB0A186-165D-467F-9A49-D91FE63E0006</key>
@@ -1889,6 +1889,8 @@
 	<string>/Users/dries/.dotfiles/iterm2</string>
 	<key>Print In Black And White</key>
 	<true/>
+	<key>PromptForPasteWhenNotAtPrompt</key>
+	<true/>
 	<key>PromptOnClose</key>
 	<true/>
 	<key>PromptOnQuit</key>
@@ -1908,7 +1910,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-12-19T09:41:12Z</date>
+	<date>2017-02-01T12:22:42Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -1921,10 +1923,14 @@
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
 	<real>0.31814903020858765</real>
+	<key>SwitchPaneModifier</key>
+	<integer>5</integer>
 	<key>SwitchTabModifier</key>
 	<integer>4</integer>
 	<key>SwitchWindowModifier</key>
 	<integer>9</integer>
+	<key>TabStyle</key>
+	<integer>1</integer>
 	<key>TabViewType</key>
 	<integer>0</integer>
 	<key>ThreeFingerEmulates</key>

@@ -11,6 +11,9 @@ setopt hist_reduce_blanks
 setopt hist_save_no_dups
 setopt hist_verify
 
+# Prompt substitution
+setopt prompt_subst
+
 # Share your history across all your terminal windows
 setopt share_history
 #setopt noclobber

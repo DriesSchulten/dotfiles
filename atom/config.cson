@@ -15,6 +15,7 @@
       "styleguide"
       "package-generator"
       "Ensime"
+      "atom-typescript"
     ]
     packagesWithKeymapsDisabled: [
       "merge-conflicts"

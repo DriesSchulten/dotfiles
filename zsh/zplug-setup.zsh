@@ -30,7 +30,7 @@ zplug "b4b4r07/enhancd", use:init.sh
 zplug "~/.zsh/conf", from:local, defer:3, if:$OSX
 
 # Theme
-zplug "sindresorhus/pure"
+zplug sindresorhus/pure, use:pure.zsh, from:github, as:theme
 
 # Install plugins that have not been installed yet
 if ! zplug check; then

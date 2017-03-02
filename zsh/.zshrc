@@ -2,9 +2,6 @@ source ~/.zsh/fzf-setup.zsh
 source ~/.zsh/zplug-setup.zsh
 source ~/.zsh/zsh-opts.zsh
 
-# Theme
-ZSH_THEME="pure"
-
 # Aliases
 alias ll='ls -l'
 alias la='ls -A'

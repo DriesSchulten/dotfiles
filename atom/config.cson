@@ -16,6 +16,7 @@
       "package-generator"
       "Ensime"
       "atom-typescript"
+      "wordcount"
     ]
     packagesWithKeymapsDisabled: [
       "merge-conflicts"

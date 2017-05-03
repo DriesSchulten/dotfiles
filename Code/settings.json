@@ -1,0 +1,12 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "editor.fontFamily": "InputMono, Monaco, 'Courier New', monospace",
+    "editor.fontSize": 10,
+    "editor.tabSize": 2,
+    "workbench.colorTheme": "Sublime Material Theme - Dark",
+    "workbench.iconTheme": "vs-seti",
+    "editor.scrollBeyondLastLine": false,
+    "terminal.external.osxExec": "iTerm.app",
+    "editor.wordWrap": "bounded",
+    "editor.wordWrapColumn": 140
+}

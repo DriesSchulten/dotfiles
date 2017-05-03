@@ -13,8 +13,8 @@ if [[ $OSTYPE == *darwin* ]]; then
   # Install ZSH
   . "$DOTFILES_DIR/zsh.mac.sh"
 
-  # Atom
-  . "$DOTFILES_DIR/atom.sh"
+  # VS Code
+  . "$DOTFILES_DIR/code.sh"
 
   # JEnv
   . "$DOTFILES_DIR/jenv.sh"

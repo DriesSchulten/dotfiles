@@ -29,3 +29,5 @@ fi
 
 # added by travis gem
 [ -f /Users/dries/.travis/travis.sh ] && source /Users/dries/.travis/travis.sh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

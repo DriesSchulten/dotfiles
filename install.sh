@@ -32,5 +32,6 @@ ln -sfv "$DOTFILES_DIR/vim/.vimrc" ~
 ln -sfv "$DOTFILES_DIR/zsh/.zshrc" ~
 mkdir ~/.zsh
 ln -sfv "$DOTFILES_DIR/zsh/zplug-setup.zsh" ~/.zsh/
+ln -sfv "$DOTFILES_DIR/zsh/fzf-setup.zsh" ~/.zsh/
 ln -sfv "$DOTFILES_DIR/zsh/zsh-opts.zsh" ~/.zsh/
 ln -sfv "$DOTFILES_DIR/zsh/conf" ~/.zsh/

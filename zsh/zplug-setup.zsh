@@ -1,6 +1,6 @@
 #!/bin/zsh
 [[ -d ~/.zplug ]] || {
-  curl -sL zplug.sh/installer | zsh
+  curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh| zsh
 }
 
 # Define OS

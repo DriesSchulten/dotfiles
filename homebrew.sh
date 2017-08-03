@@ -20,13 +20,13 @@ apps=(
   sbt
   node
   jenv
-  android-sdk
 )
 
 cask_apps=(
 	java
   iterm2
-  atom
+  visual-studio-code
+  android-sdk
 )
 
 brew install "${apps[@]}"

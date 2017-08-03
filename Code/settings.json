@@ -8,5 +8,7 @@
     "editor.scrollBeyondLastLine": false,
     "terminal.external.osxExec": "iTerm.app",
     "editor.wordWrap": "bounded",
-    "editor.wordWrapColumn": 140
+    "editor.wordWrapColumn": 140,
+    "editor.minimap.enabled": false,
+    "window.zoomLevel": 0
 }

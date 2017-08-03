@@ -287,6 +287,8 @@
 	<integer>126</integer>
 	<key>HotkeyCode</key>
 	<integer>50</integer>
+	<key>HotkeyMigratedFromSingleToMulti</key>
+	<true/>
 	<key>HotkeyModifiers</key>
 	<integer>131330</integer>
 	<key>IRMemory</key>
@@ -361,13 +363,13 @@
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>760 787 400 129 0 0 1920 1178 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>650 590 620 392 0 0 1920 1178 </string>
+	<string>652 589 620 392 0 0 1920 1178 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>520 461 796 473 0 0 1920 1178 </string>
+	<string>520 509 796 473 0 0 1920 1178 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>336 150 1200 867 0 0 1920 1178 </string>
+	<string>354 195 1200 867 0 0 1920 1178 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>563 149 1200 867 0 0 1920 1178 </string>
+	<string>354 195 1200 867 0 0 1920 1178 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>204 45 990 611 0 0 1920 1058 </string>
 	<key>NeverWarnAboutShortLivedSessions_8FB0A186-165D-467F-9A49-D91FE63E0006</key>
@@ -1910,7 +1912,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-02-01T12:22:42Z</date>
+	<date>2017-08-02T18:17:33Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -1962,6 +1964,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.13</string>
+	<string>3.1.beta.5</string>
 </dict>
 </plist>

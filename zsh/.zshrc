@@ -12,7 +12,7 @@ export THEFUCK_REQUIRE_CONFIRMATION=false
 
 if [[ $OSTYPE == *darwin* ]]; then
   # Editor
-  export EDITOR="/usr/local/bin/atom"
+  export EDITOR="/usr/local/bin/code"
 
   # Ruby gems
   export GEM_HOME=$HOME/.gem

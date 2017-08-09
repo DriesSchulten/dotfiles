@@ -23,6 +23,9 @@ else
   . "$DOTFILES_DIR/zsh.linux.sh"
 fi
 
+# Vundle setup
+. "$DOTFILES_DIR/vundle.sh"
+
 # Link
 ln -sfv "$DOTFILES_DIR/git/.gitconfig" ~
 ln -sfv "$DOTFILES_DIR/git/.gitignore_global" ~

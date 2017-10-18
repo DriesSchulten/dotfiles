@@ -9,7 +9,7 @@ local OSX="[[ $OSTYPE == *darwin* ]]"
 # Essential
 source ~/.zplug/init.zsh
 
-zplug "zplug/zplug"
+zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 
 # Plugins
 zplug "zsh-users/zsh-syntax-highlighting", defer:2

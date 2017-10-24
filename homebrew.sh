@@ -25,7 +25,7 @@ apps=(
 cask_apps=(
 	java
   iterm2
-  visual-studio-code
+  sublime-text
   android-sdk
 )
 

@@ -24,6 +24,13 @@ if [[ $OSTYPE == *darwin* ]]; then
 
   # Pad
   export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools:$GEM_HOME/bin:$PATH
+
+  # Python local packages
+  PYTHON_BIN="`python3 -m site --user-base`/bin"
+  export PATH=$PYTHON_BIN:$PATH
+
+  # Pyton webserver
+  alias serve='python3 -m http.server 9000'
 else
   export EDITOR="/usr/bin/vim"
   export PATH="$PATH:$HOME/.rvm/bin"

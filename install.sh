@@ -38,3 +38,8 @@ ln -sfv "$DOTFILES_DIR/zsh/zplug-setup.zsh" ~/.zsh/
 ln -sfv "$DOTFILES_DIR/zsh/fzf-setup.zsh" ~/.zsh/
 ln -sfv "$DOTFILES_DIR/zsh/zsh-opts.zsh" ~/.zsh/
 ln -sfv "$DOTFILES_DIR/zsh/conf" ~/.zsh/
+
+if [[ $OSTYPE == *darwin* ]]; then
+  # Launchctl vars
+  launchctl setenv ANDROID_HOME /usr/local/share/android-sdk/
+fi

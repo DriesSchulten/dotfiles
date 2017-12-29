@@ -20,6 +20,8 @@ apps=(
   sbt
   node
   jenv
+  diff-so-fancy
+  cocoapods
 )
 
 cask_apps=(

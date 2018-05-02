@@ -327,7 +327,7 @@
 	<key>MaxVertically</key>
 	<false/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/.dotfiles/iterm2</string>
+	<string>~/Pictures/Wallpapers</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -361,6 +361,30 @@
 	</data>
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
+	<key>NSTouchBarConfig: full screen</key>
+	<dict>
+		<key>CurrentItems</key>
+		<array>
+			<string>iTermTouchBarIdentifierManPage</string>
+			<string>iTermTouchBarIdentifierFunctionKeys</string>
+			<string>NSTouchBarItemIdentifierFlexibleSpace</string>
+			<string>tab bar</string>
+			<string>touchbar:5A43FD79-163B-40BA-ADBA-8C9804093BD2</string>
+			<string>NSTouchBarItemIdentifierOtherItemsProxy</string>
+		</array>
+		<key>DefaultItems</key>
+		<array>
+			<string>iTermTouchBarIdentifierManPage</string>
+			<string>iTermTouchBarIdentifierColorPreset</string>
+			<string>iTermTouchBarIdentifierFunctionKeys</string>
+			<string>NSTouchBarItemIdentifierFlexibleSpace</string>
+			<string>tab bar</string>
+			<string>NSTouchBarItemIdentifierOtherItemsProxy</string>
+			<string>iTermTouchBarIdentifierAddMark</string>
+			<string>iTermTouchBarIdentifierPreviousMark</string>
+			<string>iTermTouchBarIdentifierNextMark</string>
+		</array>
+	</dict>
 	<key>NSTouchBarConfig: regular</key>
 	<dict>
 		<key>CurrentItems</key>
@@ -387,15 +411,15 @@
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>1301 968 400 129 0 0 1920 1178 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>610 503 700 507 0 0 1920 1178 </string>
+	<string>610 519 700 507 0 0 1920 1200 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 126 606 469 0 0 1920 1178 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>860 559 796 473 0 0 1920 1178 </string>
+	<string>860 624 796 473 0 0 1920 1200 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>445 107 1410 1007 0 0 1920 1178 </string>
+	<string>0 171 1410 1007 0 0 1920 1200 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>660 208 1200 867 0 0 1920 1178 </string>
+	<string>510 68 1410 1007 0 0 1920 1178 </string>
 	<key>NeverWarnAboutShortLivedSessions_8FB0A186-165D-467F-9A49-D91FE63E0006</key>
 	<true/>
 	<key>New Bookmarks</key>
@@ -566,10 +590,8 @@
 			</dict>
 			<key>Background Image Is Tiled</key>
 			<false/>
-			<key>Background Image Location</key>
-			<string></string>
 			<key>Blend</key>
-			<real>0.30000001192092896</real>
+			<real>0.29781151031836489</real>
 			<key>Blink Allowed</key>
 			<false/>
 			<key>Blinking Cursor</key>
@@ -1114,7 +1136,7 @@
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
-			<integer>0</integer>
+			<integer>1</integer>
 			<key>Working Directory</key>
 			<string>/Users/dries</string>
 		</dict>
@@ -1201,7 +1223,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-10-23T20:03:42Z</date>
+	<date>2018-04-25T08:31:42Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -1255,6 +1277,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.5.beta.1</string>
+	<string>3.1.6beta5</string>
 </dict>
 </plist>

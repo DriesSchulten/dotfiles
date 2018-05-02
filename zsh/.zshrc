@@ -29,6 +29,9 @@ if [[ $OSTYPE == *darwin* ]]; then
   PYTHON_BIN="`python3 -m site --user-base`/bin"
   export PATH=$PYTHON_BIN:$PATH
 
+  # Composer bin 
+  export PATH="$HOME/.composer/vendor/bin:$PATH"
+
   # Pyton webserver
   alias serve='python3 -m http.server 9000'
 else

@@ -18,10 +18,6 @@ if [[ $OSTYPE == *darwin* ]]; then
   # Ruby gems
   export GEM_HOME=$HOME/.gem
 
-  # GO
-  export PATH=$PATH:/usr/local/opt/go/libexec/bin
-  export GOPATH=/Users/dries/Projects/Go
-
   # Pad
   export PATH=/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools:$GEM_HOME/bin:$PATH
 
@@ -32,8 +28,11 @@ if [[ $OSTYPE == *darwin* ]]; then
   # Composer bin 
   export PATH="$HOME/.composer/vendor/bin:$PATH"
 
-  # Pyton webserver
-  alias serve='python3 -m http.server 9000'
+  # MySQL 5.7
+  export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+
+  # Node 10
+  export PATH="/usr/local/opt/node@10/bin:$PATH"
 else
   export EDITOR="/usr/bin/vim"
   export PATH="$PATH:$HOME/.rvm/bin"
@@ -43,3 +42,12 @@ fi
 [ -f /Users/dries/.travis/travis.sh ] && source /Users/dries/.travis/travis.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh

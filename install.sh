@@ -11,16 +11,14 @@ if [[ $OSTYPE == *darwin* ]]; then
   . "$DOTFILES_DIR/homebrew.sh"
 
   # Install ZSH
-  . "$DOTFILES_DIR/zsh.mac.sh"
+  . "$DOTFILES_DIR/fish.mac.sh"
 
   # Sublime
   . "$DOTFILES_DIR/sublime.sh"
+  . "$DOTFILES_DIR/smerge.sh"
 
   # JEnv
   . "$DOTFILES_DIR/jenv.sh"
-else
-  # Install/set ZSH
-  . "$DOTFILES_DIR/zsh.linux.sh"
 fi
 
 # Vundle setup
@@ -32,12 +30,11 @@ ln -sfv "$DOTFILES_DIR/git/.gitignore_global" ~
 
 ln -sfv "$DOTFILES_DIR/vim/.vimrc" ~
 
-ln -sfv "$DOTFILES_DIR/zsh/.zshrc" ~
-mkdir ~/.zsh
-ln -sfv "$DOTFILES_DIR/zsh/zplug-setup.zsh" ~/.zsh/
-ln -sfv "$DOTFILES_DIR/zsh/fzf-setup.zsh" ~/.zsh/
-ln -sfv "$DOTFILES_DIR/zsh/zsh-opts.zsh" ~/.zsh/
-ln -sfv "$DOTFILES_DIR/zsh/conf" ~/.zsh/
+mkdir -p ~/.config/fish
+ln -sfv "$DOTFILES_DIR/fish/config.fish" ~/.config/fish/
+ln -sfv "$DOTFILES_DIR/fish/fishfile" ~/.config/fish/
+
+fish "$DOTFILES_DIR/fish/fisher-setup.fish"
 
 if [[ $OSTYPE == *darwin* ]]; then
   # Launchctl vars

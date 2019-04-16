@@ -1,5 +1,7 @@
 #!/bin/sh
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+if ! type brew > /dev/null; then
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
 
 brew analytics off
 
@@ -12,22 +14,22 @@ apps=(
   vim
   git
   git-flow
-  scala
-  groovy
   python3
-  gradle
   maven
   sbt
   node
   jenv
-  diff-so-fancy
   cocoapods
+  fzf
+  terminal-notifier
 )
 
 cask_apps=(
 	java
+  java8
   iterm2
   sublime-text
+  sublime-merge 
   android-sdk
 )
 

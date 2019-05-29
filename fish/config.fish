@@ -7,3 +7,11 @@ set -e fish_greeting
 
 # Android
 export ANDROID_HOME=/usr/local/share/android-sdk
+
+thefuck --alias | source 
+
+alias ls='lsd'
+alias l='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+alias lt='ls --tree'

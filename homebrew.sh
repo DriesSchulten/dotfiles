@@ -22,6 +22,7 @@ apps=(
   cocoapods
   fzf
   terminal-notifier
+  httpie
 )
 
 cask_apps=(

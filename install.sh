@@ -10,7 +10,7 @@ if [[ $OSTYPE == *darwin* ]]; then
   # Install homebrew
   . "$DOTFILES_DIR/homebrew.sh"
 
-  # Install ZSH
+  # Install FISH
   . "$DOTFILES_DIR/fish.mac.sh"
 
   # Sublime

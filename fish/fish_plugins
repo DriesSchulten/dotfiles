@@ -1,5 +1,5 @@
 jethrokuan/fzf
 franciscolourenco/done
-~/.dotfiles/fish/packages/javaenv
 jorgebucaran/fisher
-ilancosman/tide
+IlanCosman/tide
+reitzig/sdkman-for-fish@dev

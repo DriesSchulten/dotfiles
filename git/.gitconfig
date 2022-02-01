@@ -5,7 +5,7 @@
 	ui = true
 [user]
 	name = Dries Schulten
-	email = dries.schulten@fastmail.com
+	email = dries@ceratech.io
 [core]
 	editor = vim
 	excludesfile = /Users/dries/.gitignore_global
@@ -26,10 +26,10 @@
   interactive = auto
   status = auto
 [merge]
-  tool = sublimerge
-[mergetool "sublimerge"]
-  cmd = subl -n --wait \"$REMOTE\" \"$BASE\" \"$LOCAL\" \"$MERGED\" --command \"sublimerge_diff_views\"
-trustExitCode = false
+  tool = smerge
+[mergetool "smerge"]
+  cmd = smerge mergetool "$BASE" "$LOCAL" "$REMOTE" -o "$MERGED"
+  trustExitCode = true
 [color "diff-highlight"]
 	oldNormal = red bold
 	oldHighlight = red bold 52
@@ -46,3 +46,5 @@ trustExitCode = false
 	required = true
 [pull]
 	rebase = false
+[init]
+	defaultBranch = main

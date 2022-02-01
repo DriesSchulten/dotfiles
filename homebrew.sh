@@ -5,34 +5,22 @@ fi
 
 brew analytics off
 
-brew tap caskroom/cask
-brew tap caskroom/versions
-
 apps=(
-  thefuck
   htop-osx
   vim
   git
   git-flow
   python3
-  maven
-  sbt
   node
-  jenv
   cocoapods
   fzf
   terminal-notifier
-  httpie
-)
-
-cask_apps=(
-	java
-  java8
+  diff-so-fancy
   iterm2
   sublime-text
-  sublime-merge 
+  sublime-merge
   android-sdk
+  font-hack-nerd-font
 )
 
 brew install "${apps[@]}"
-brew cask install "${cask_apps[@]}"

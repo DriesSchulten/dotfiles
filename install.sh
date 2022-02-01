@@ -17,8 +17,8 @@ if [[ $OSTYPE == *darwin* ]]; then
   . "$DOTFILES_DIR/sublime.sh"
   . "$DOTFILES_DIR/smerge.sh"
 
-  # JEnv
-  . "$DOTFILES_DIR/jenv.sh"
+  # SDKMan
+  . "#DOTFILES_DIR/sdkman.sh"
 fi
 
 # Vundle setup
@@ -35,8 +35,6 @@ ln -sfv "$DOTFILES_DIR/fish/config.fish" ~/.config/fish/
 ln -sfv "$DOTFILES_DIR/fish/fish_plugins" ~/.config/fish/
 
 fish "$DOTFILES_DIR/fish/fisher-setup.fish"
-
-curl -sL git.io/tide | source && tide_install
 
 if [[ $OSTYPE == *darwin* ]]; then
   # Launchctl vars

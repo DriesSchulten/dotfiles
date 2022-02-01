@@ -11,7 +11,6 @@ set -g fish_user_paths (ruby -e 'print Gem.user_dir')/bin $fish_user_paths
 # Android
 export ANDROID_HOME=/usr/local/share/android-sdk
 
-# thefuck --alias | source 
 
 alias ls='lsd'
 alias l='ls -l'

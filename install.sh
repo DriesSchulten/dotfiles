@@ -18,7 +18,7 @@ if [[ $OSTYPE == *darwin* ]]; then
   . "$DOTFILES_DIR/smerge.sh"
 
   # SDKMan
-  . "#DOTFILES_DIR/sdkman.sh"
+  . "$DOTFILES_DIR/sdkman.sh"
 fi
 
 # Vundle setup

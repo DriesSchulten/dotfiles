@@ -32,6 +32,7 @@ apps=(
   slack
   google-chrome
   firefox
+  autojump
 )
 
 brew install "${apps[@]}"

@@ -1,9 +1,10 @@
 #!/bin/sh
 if ! type brew > /dev/null; then
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 
 brew analytics off
+brew tap homebrew/cask-fonts
 
 apps=(
   htop-osx
@@ -21,6 +22,9 @@ apps=(
   sublime-merge
   android-sdk
   font-hack-nerd-font
+  intellij-idea
+  insomnia
+  brisync
 )
 
 brew install "${apps[@]}"

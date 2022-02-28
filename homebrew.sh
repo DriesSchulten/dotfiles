@@ -28,6 +28,10 @@ apps=(
   intellij-idea
   insomnia
   brisync
+  lsd
+  slack
+  google-chrome
+  firefox
 )
 
 brew install "${apps[@]}"

@@ -1,8 +1,9 @@
-set --export SHELL /usr/bin/fish
+set --export SHELL /opt/homebrew/bin/fish
 set --export EDITOR "subl -w"
 set -U fish_greeting
 
-set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
+set -g fish_user_paths "/opt/homebrew/sbin" $fish_user_paths
+set -g fish_user_paths "/opt/homebrew/bin" $fish_user_paths
 set -g fish_user_paths (ruby -e 'print Gem.user_dir')/bin $fish_user_paths
 
 [ -f /usr/local/share/autojump/autojump.fish ]; and source /usr/local/share/autojump/autojump.fish

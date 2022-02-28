@@ -3,6 +3,9 @@ if ! type brew > /dev/null; then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/dries/.profile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 brew analytics off
 brew tap homebrew/cask-fonts
 

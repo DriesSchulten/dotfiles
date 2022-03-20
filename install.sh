@@ -38,5 +38,5 @@ fish "$DOTFILES_DIR/fish/fisher-setup.fish"
 
 if [[ $OSTYPE == *darwin* ]]; then
   # Launchctl vars
-  launchctl setenv ANDROID_HOME /usr/local/share/android-sdk/
+  launchctl setenv ANDROID_HOME /opt/homebrew/share/android-sdk/
 fi

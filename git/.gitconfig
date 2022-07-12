@@ -56,4 +56,4 @@
 [includeIf "gitdir:~/Projects/Skyworkz/"]
   path = ~/.gitconfig-skyworkz
 [alias]
-  prune-local = ! "git for-each-ref --format '%(refname:short) %(upstream:track)' | awk '$2 == "[gone]" {print $1}' | xargs -r git branch -D"
+  prune-local = ! "git for-each-ref --format '%(refname:short) %(upstream:track)' | awk '$2 == \"[gone]\" {print $1}' | xargs -r git branch -D"

@@ -5,7 +5,6 @@
 	ui = true
 [user]
 	name = Dries Schulten
-	email = dries
 	sshCommand = ssh -i ~/.ssh/id_git
 [core]
 	editor = code --wait

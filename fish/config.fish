@@ -10,12 +10,6 @@ set -g fish_user_paths (ruby -e 'print Gem.user_dir')/bin $fish_user_paths
 
 export NVM_DIR="$HOME/.nvm"
 export NVM_SYMLINK_CURRENT=true
-
-function sdk
-  bash -c "source '$HOME/.sdkman/bin/sdkman-init.sh'; sdk $argv[1..]"
-end
-
-fish_add_path (find $HOME/.sdkman/candidates/*/current/bin -maxdepth 0)
  
 [ -f /opt/homebrew/share/autojump/autojump.fish ]; and source /opt/homebrew/share/autojump/autojump.fish
 [ -f ~/Library/autojump/autojump.txt ]; and alias j="cd (cat ~/Library/autojump/autojump.txt | sort -nr | awk '{print \$2}' | fzf +s)"

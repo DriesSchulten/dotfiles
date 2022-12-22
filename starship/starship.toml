@@ -1,0 +1,21 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+[aws]
+disabled = true
+
+[package]
+disabled = true
+
+[java]
+format = '\([${symbol}(${version})]($style)\) '
+style =	'bold blue'
+
+[nodejs]
+format = '\([$symbol($version)]($style)\) '
+
+[cmd_duration]
+show_notifications = true
+min_time_to_notify = 30_000
+
+[git_branch]
+format = '[$symbol$branch(:$remote_branch)]($style) '

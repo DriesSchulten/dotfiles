@@ -37,6 +37,8 @@ mkdir -p ~/.config/fish
 ln -sfv "$DOTFILES_DIR/fish/config.fish" ~/.config/fish/
 ln -sfv "$DOTFILES_DIR/fish/fish_plugins" ~/.config/fish/
 
+ln -sfv "$DOTFILES_DIR/starship/starship.toml" ~/.config/
+
 fish "$DOTFILES_DIR/fish/fisher-setup.fish"
 
 if [[ $OSTYPE == *darwin* ]]; then

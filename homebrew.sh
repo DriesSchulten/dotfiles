@@ -27,12 +27,14 @@ apps=(
   font-hack-nerd-font
   intellij-idea
   insomnia
+  postman
   brisync
   lsd
   slack
   google-chrome
   firefox
   autojump
+  starship
 )
 
 brew install "${apps[@]}"

@@ -1,12 +1,13 @@
 set --export SHELL /opt/homebrew/bin/fish
-set --export EDITOR "subl -w"
+set --export EDITOR "code -w"
 
 set -U fish_greeting
-set -U fish_color_command c397d8
 
 set -g fish_user_paths "/opt/homebrew/sbin" $fish_user_paths
 set -g fish_user_paths "/opt/homebrew/bin" $fish_user_paths
 set -g fish_user_paths (ruby -e 'print Gem.user_dir')/bin $fish_user_paths
+
+starship init fish | source
 
 export NVM_DIR="$HOME/.nvm"
 export NVM_SYMLINK_CURRENT=true

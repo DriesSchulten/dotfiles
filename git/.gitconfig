@@ -54,7 +54,13 @@
   path = ~/.gitconfig-cycleon
 [includeIf "gitdir:~/Projects/Skyworkz/"]
   path = ~/.gitconfig-skyworkz
+[includeIf "gitdir:~/Projects/Default/"]
+  path = ~/.gitconfig-default
 [alias]
   prune-local = ! "git for-each-ref --format '%(refname:short) %(upstream:track)' | awk '$2 == \"[gone]\" {print $1}' | xargs -r git branch -D"
 [gpg "ssh"]
 	allowedSignersFile = /Users/dries/.ssh/allowed_signers
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"

@@ -13,16 +13,12 @@ if [[ $OSTYPE == *darwin* ]]; then
   # Install FISH
   . "$DOTFILES_DIR/fish.mac.sh"
 
-  # Sublime
-  . "$DOTFILES_DIR/sublime.sh"
+  # Sublime merge
   . "$DOTFILES_DIR/smerge.sh"
 
   # SDKMan
   . "$DOTFILES_DIR/sdkman.sh"
 fi
-
-# Vundle setup
-. "$DOTFILES_DIR/vundle.sh"
 
 # Link
 ln -sfv "$DOTFILES_DIR/git/.gitconfig" ~
@@ -32,11 +28,11 @@ ln -sfv "$DOTFILES_DIR/git/.gitconfig-skyworkz" ~
 ln -sfv "$DOTFILES_DIR/git/.gitconfig-cycleon" ~
 ln -sfv "$DOTFILES_DIR/git/.gitconfig-default" ~
 
-ln -sfv "$DOTFILES_DIR/vim/.vimrc" ~
-
 mkdir -p ~/.config/fish
 ln -sfv "$DOTFILES_DIR/fish/config.fish" ~/.config/fish/
 ln -sfv "$DOTFILES_DIR/fish/fish_plugins" ~/.config/fish/
+
+ln -sfv "$DOTFILES_DIR/nvim" ~/.config/nvim
 
 ln -sfv "$DOTFILES_DIR/starship/starship.toml" ~/.config/
 

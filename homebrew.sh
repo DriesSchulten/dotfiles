@@ -11,30 +11,25 @@ brew tap homebrew/cask-fonts
 
 apps=(
   htop-osx
-  vim
+  neovim
   git
-  git-flow
   python3
   node
-  cocoapods
   fzf
   terminal-notifier
   diff-so-fancy
   iterm2
-  sublime-text
   sublime-merge
-  android-sdk
   font-hack-nerd-font
   intellij-idea
-  insomnia
-  postman
-  brisync
+  monitorcontrol
   lsd
   slack
   google-chrome
   firefox
   autojump
   starship
+  visual-studio-code
 )
 
 brew install "${apps[@]}"

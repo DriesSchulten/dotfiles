@@ -48,8 +48,6 @@
 	rebase = false
 [init]
 	defaultBranch = main
-[includeIf "gitdir:~/Projects/Ceratech/"]
-  path = ~/.gitconfig-ceratech
 [includeIf "gitdir:~/Projects/Cycleon/"]
   path = ~/.gitconfig-cycleon
 [includeIf "gitdir:~/Projects/Skyworkz/"]

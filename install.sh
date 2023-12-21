@@ -23,7 +23,6 @@ fi
 # Link
 ln -sfv "$DOTFILES_DIR/git/.gitconfig" ~
 ln -sfv "$DOTFILES_DIR/git/.gitignore_global" ~
-ln -sfv "$DOTFILES_DIR/git/.gitconfig-ceratech" ~
 ln -sfv "$DOTFILES_DIR/git/.gitconfig-skyworkz" ~
 ln -sfv "$DOTFILES_DIR/git/.gitconfig-cycleon" ~
 ln -sfv "$DOTFILES_DIR/git/.gitconfig-default" ~

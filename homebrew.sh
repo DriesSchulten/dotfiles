@@ -20,8 +20,10 @@ apps=(
   diff-so-fancy
   iterm2
   sublime-merge
-  font-hack-nerd-font
-  intellij-idea
+  fork
+  font-jetbrains-mono-nerd-font
+  font-jetbrains-mono
+  jetbrains-toolbox
   monitorcontrol
   lsd
   slack

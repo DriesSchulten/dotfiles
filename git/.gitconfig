@@ -1,25 +1,21 @@
 [color]
-	diff = true
-	status = auto
-	branch = auto
-	ui = true
+  diff = true
+  status = auto
+  branch = auto
+  ui = true
 [user]
-	name = Dries Schulten
-	sshCommand = ssh -i ~/.ssh/id_git
+  name = Dries Schulten
+  email = dries.schulten.ext@reboundreturns.com
 [core]
-	editor = code --wait
-	excludesfile = /Users/dries/.gitignore_global
-	pager = diff-so-fancy | less --tabs=2 -RFX
+  excludesfile = /Users/dries/.gitignore_global
 [push]
-	default = simple
+  default = simple
 [credential]
-	helper = osxkeychain
+  helper = osxkeychain
 [alias]
-	co = checkout
-	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
-  lol = log --graph --decorate --pretty=oneline --abbrev-commit
-  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
-	st = status --short --branch
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  st = status --short --branch
+	prune-local = ! "git for-each-ref --format '%(refname:short) %(upstream:track)' | awk '$2 == \"[gone]\" {print $1}' | xargs -r git branch -D"
 [color]
   branch = auto
   diff = auto
@@ -31,34 +27,33 @@
   cmd = smerge mergetool "$BASE" "$LOCAL" "$REMOTE" -o "$MERGED"
   trustExitCode = true
 [color "diff-highlight"]
-	oldNormal = red bold
-	oldHighlight = red bold 52
-	newNormal = green bold
-	newHighlight = green bold 22
+  oldNormal = red bold
+  oldHighlight = red bold 52
+  newNormal = green bold
+  newHighlight = green bold 22
 [rebase]
-	autostash = true
+  autostash = true
+[rerere]
+  enabled = true
 [diff]
-	indentHeuristic = true
+  indentHeuristic = true
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
 [pull]
-	rebase = false
+  rebase = false
 [init]
-	defaultBranch = main
+  defaultBranch = main
 [includeIf "gitdir:~/Projects/Cycleon/"]
   path = ~/.gitconfig-cycleon
 [includeIf "gitdir:~/Projects/Skyworkz/"]
   path = ~/.gitconfig-skyworkz
 [includeIf "gitdir:~/Projects/Default/"]
   path = ~/.gitconfig-default
-[alias]
-  prune-local = ! "git for-each-ref --format '%(refname:short) %(upstream:track)' | awk '$2 == \"[gone]\" {print $1}' | xargs -r git branch -D"
-[gpg "ssh"]
-	allowedSignersFile = /Users/dries/.ssh/allowed_signers
 [gpg]
-	format = ssh
+  format = ssh
 [gpg "ssh"]
-	program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+  allowedSignersFile = /Users/dries/.ssh/allowed_signers
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"

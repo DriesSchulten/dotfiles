@@ -5,7 +5,7 @@
   ui = true
 [user]
   name = Dries Schulten
-  email = dries.schulten.ext@reboundreturns.com
+  email = dries@skyworkz.nl
 [core]
   excludesfile = /Users/dries/.gitignore_global
 [push]
@@ -46,8 +46,6 @@
   rebase = false
 [init]
   defaultBranch = main
-[includeIf "gitdir:~/Projects/Cycleon/"]
-  path = ~/.gitconfig-cycleon
 [includeIf "gitdir:~/Projects/Skyworkz/"]
   path = ~/.gitconfig-skyworkz
 [includeIf "gitdir:~/Projects/Default/"]

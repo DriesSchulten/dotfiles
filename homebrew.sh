@@ -16,8 +16,6 @@ apps=(
   python3
   node
   fzf
-  terminal-notifier
-  diff-so-fancy
   iterm2
   sublime-merge
   fork
@@ -29,7 +27,7 @@ apps=(
   slack
   google-chrome
   firefox
-  autojump
+  zoxide
   starship
   visual-studio-code
 )

@@ -1,5 +1,5 @@
-set --export SHELL /opt/homebrew/bin/fish
-set --export EDITOR "code -w"
+set -Ux SHELL /opt/homebrew/bin/fish
+set -Ux EDITOR "code -w"
 
 set -U fish_greeting
 

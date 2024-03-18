@@ -11,7 +11,6 @@ brew tap homebrew/cask-fonts
 
 apps=(
   htop-osx
-  neovim
   git
   python3
   node

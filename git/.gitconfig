@@ -48,6 +48,8 @@
   defaultBranch = main
 [includeIf "gitdir:~/Projects/Skyworkz/"]
   path = ~/.gitconfig-skyworkz
+[includeIf "gitdir:~/Projects/H4H/"]
+  path = ~/.gitconfig-h4h
 [includeIf "gitdir:~/Projects/Default/"]
   path = ~/.gitconfig-default
 [gpg]

@@ -24,14 +24,12 @@ fi
 ln -sfv "$DOTFILES_DIR/git/.gitconfig" ~
 ln -sfv "$DOTFILES_DIR/git/.gitignore_global" ~
 ln -sfv "$DOTFILES_DIR/git/.gitconfig-skyworkz" ~
-ln -sfv "$DOTFILES_DIR/git/.gitconfig-cycleon" ~
+ln -sfv "$DOTFILES_DIR/git/.gitconfig-h4h" ~
 ln -sfv "$DOTFILES_DIR/git/.gitconfig-default" ~
 
 mkdir -p ~/.config/fish
 ln -sfv "$DOTFILES_DIR/fish/config.fish" ~/.config/fish/
 ln -sfv "$DOTFILES_DIR/fish/fish_plugins" ~/.config/fish/
-
-ln -sfv "$DOTFILES_DIR/nvim" ~/.config/nvim
 
 ln -sfv "$DOTFILES_DIR/starship/starship.toml" ~/.config/
 

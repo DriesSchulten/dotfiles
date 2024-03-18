@@ -38,10 +38,3 @@ contents.xcworkspacedata
 .idea/
 *.iml
 
-# Git
-.gitreview
-
-# Ensime
-.ensime
-.ensime_cache/
-

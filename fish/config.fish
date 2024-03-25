@@ -12,7 +12,6 @@ set -g fish_user_paths "/Users/dries/Library/Application Support/JetBrains/Toolb
 
 starship init fish | source
 zoxide init fish | source
-pyenv init - | source
 
 alias ls="lsd"
 abbr -a lla "ls -la"

@@ -1,0 +1,4 @@
+[tools]
+maven = "latest"
+gradle = "latest"
+java = "temurin-21"

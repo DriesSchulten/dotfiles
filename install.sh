@@ -14,9 +14,6 @@ DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # Sublime merge
 . "$DOTFILES_DIR/smerge.sh"
 
-# SDKMan
-. "$DOTFILES_DIR/sdkman.sh"
-
 # Link
 ln -sfv "$DOTFILES_DIR/git/.gitconfig" ~
 ln -sfv "$DOTFILES_DIR/git/.gitignore_global" ~
@@ -29,5 +26,6 @@ ln -sfv "$DOTFILES_DIR/fish/config.fish" ~/.config/fish/
 ln -sfv "$DOTFILES_DIR/fish/fish_plugins" ~/.config/fish/
 
 ln -sfv "$DOTFILES_DIR/starship/starship.toml" ~/.config/
+ln -sfv "$DOTFILES_DIR/mise" ~/.config/mise
 
 fish "$DOTFILES_DIR/fish/fisher-setup.fish"

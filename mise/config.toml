@@ -2,3 +2,4 @@
 maven = "latest"
 gradle = "latest"
 java = "temurin-21"
+node = "latest"

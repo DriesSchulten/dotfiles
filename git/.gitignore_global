@@ -38,3 +38,4 @@ contents.xcworkspacedata
 .idea/
 *.iml
 
+.mise.toml

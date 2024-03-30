@@ -13,6 +13,10 @@ set -g fish_user_paths "/Users/dries/Library/Application Support/JetBrains/Toolb
 starship init fish | source
 zoxide init fish | source
 
+if not status is-interactive
+  mise activate fish --shims | source
+end
+
 alias ls="lsd"
 abbr -a lla "ls -la"
 abbr -a lt "ls --tree"

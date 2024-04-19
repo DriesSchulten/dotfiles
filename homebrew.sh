@@ -12,9 +12,6 @@ brew tap homebrew/cask-fonts
 apps=(
   htop-osx
   git
-  python3
-  node
-  fzf
   iterm2
   sublime-merge
   fork

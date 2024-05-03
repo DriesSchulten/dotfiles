@@ -19,7 +19,8 @@ apps=(
   font-jetbrains-mono
   jetbrains-toolbox
   monitorcontrol
-  lsd
+  eza
+  fzf
   slack
   google-chrome
   firefox

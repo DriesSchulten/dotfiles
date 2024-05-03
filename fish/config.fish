@@ -17,6 +17,6 @@ if not status is-interactive
   mise activate fish --shims | source
 end
 
-alias ls="lsd"
+alias ls="eza"
 abbr -a lla "ls -la"
 abbr -a lt "ls --tree"

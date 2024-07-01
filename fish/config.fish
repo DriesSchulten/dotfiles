@@ -5,10 +5,8 @@ set -U fish_greeting
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-set -g fish_user_paths "/opt/homebrew/sbin" $fish_user_paths
-set -g fish_user_paths "/opt/homebrew/bin" $fish_user_paths
-set -g fish_user_paths "/Users/dries/.cargo/bin" $fish_user_paths
-set -g fish_user_paths "/Users/dries/Library/Application Support/JetBrains/Toolbox/scripts" $fish_user_paths
+fish_add_path "/Users/dries/.cargo/bin"
+fish_add_path "/Users/dries/Library/Application Support/JetBrains/Toolbox/scripts"
 
 starship init fish | source
 zoxide init fish | source
@@ -17,6 +15,6 @@ if not status is-interactive
   mise activate fish --shims | source
 end
 
-alias ls="eza"
+alias ls="eza --icons=always"
 abbr -a lla "ls -la"
 abbr -a lt "ls --tree"

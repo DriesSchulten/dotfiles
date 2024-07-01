@@ -14,19 +14,21 @@ apps=(
   git
   iterm2
   sublime-merge
-  fork
   font-jetbrains-mono-nerd-font
   font-jetbrains-mono
   jetbrains-toolbox
   monitorcontrol
   eza
   fzf
+  fd
+  bat
   slack
   google-chrome
   firefox
   zoxide
   starship
   visual-studio-code
+  wezterm
 )
 
 brew install "${apps[@]}"

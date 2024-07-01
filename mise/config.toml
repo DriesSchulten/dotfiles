@@ -1,7 +1,6 @@
 [tools]
 maven = "latest"
 gradle = "latest"
-java = "temurin-21"
+java = "temurin-17"
 node = "latest"
 python = "latest"
-sbt = "latest"

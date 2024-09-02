@@ -18,3 +18,5 @@ end
 alias ls="eza --icons=always"
 abbr -a lla "ls -la"
 abbr -a lt "ls --tree"
+
+alias cd="z"

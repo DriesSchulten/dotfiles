@@ -10,6 +10,7 @@
   excludesfile = /Users/dries/.gitignore_global
 [push]
   default = simple
+  autoSetupRemote = true
 [credential]
   helper = osxkeychain
 [alias]

@@ -12,7 +12,6 @@ brew tap homebrew/cask-fonts
 apps=(
   htop-osx
   git
-  iterm2
   sublime-merge
   font-jetbrains-mono-nerd-font
   font-jetbrains-mono
@@ -29,6 +28,9 @@ apps=(
   starship
   visual-studio-code
   wezterm
+  ripgrep
+  neovim
+  mise
 )
 
 brew install "${apps[@]}"

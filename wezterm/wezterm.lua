@@ -34,13 +34,13 @@ tabline.setup({
 		tabline_b = { "workspace" },
 		tabline_c = { " " },
 		tab_active = {
-			"tab_index",
+			"index",
 			{ "parent", padding = 0 },
 			"/",
 			{ "cwd", max_length = 30, padding = { left = 0, right = 1 } },
 			{ "zoomed", padding = 0 },
 		},
-		tab_inactive = { "tab_index", { "process", padding = { left = 0, right = 1 } } },
+		tab_inactive = { "index", { "process", padding = { left = 0, right = 1 } } },
 		tabline_x = { "ram", "cpu" },
 		tabline_y = { "battery" },
 		tabline_z = { { "datetime", style = "%Y-%m-%d %H:%M:%S" } },
@@ -58,12 +58,12 @@ config.keys = {
 	{ key = "z", mods = "LEADER", action = "TogglePaneZoomState" },
 	{ key = "c", mods = "LEADER", action = act({ SpawnTab = "CurrentPaneDomain" }) },
 
-	{ key = "h", mods = "CTRL", action = act.ActivatePaneDirection("Left") },
-	{ key = "j", mods = "CTRL", action = act.ActivatePaneDirection("Down") },
-	{ key = "k", mods = "CTRL", action = act.ActivatePaneDirection("Up") },
-	{ key = "l", mods = "CTRL", action = act.ActivatePaneDirection("Right") },
+	{ key = "h", mods = "LEADER", action = act.ActivatePaneDirection("Left") },
+	{ key = "j", mods = "LEADER", action = act.ActivatePaneDirection("Down") },
+	{ key = "k", mods = "LEADER", action = act.ActivatePaneDirection("Up") },
+	{ key = "l", mods = "LEADER", action = act.ActivatePaneDirection("Right") },
 
-	{ key = "l", mods = "LEADER", action = act.ActivateLastTab },
+	{ key = "`", mods = "LEADER", action = act.ActivateLastTab },
 	{ key = "n", mods = "LEADER", action = act.ActivateTabRelative(1) },
 	{ key = "p", mods = "LEADER", action = act.ActivateTabRelative(-1) },
 	{ key = "1", mods = "LEADER", action = act({ ActivateTab = 0 }) },
@@ -80,3 +80,4 @@ config.keys = {
 }
 
 return config
+-- vim: ts=2 sts=2 sw=2 et

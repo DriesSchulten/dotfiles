@@ -1,6 +1,7 @@
 local wezterm = require("wezterm")
 local act = wezterm.action
 local config = wezterm.config_builder()
+local mux = wezterm.mux
 
 local tabline = wezterm.plugin.require("https://github.com/michaelbrusegard/tabline.wez")
 
@@ -48,6 +49,14 @@ tabline.setup({
 	extensions = {},
 })
 tabline.apply_to_config(config)
+
+wezterm.on("gui-startup", function(cmd)
+	local _, pane, window = mux.spawn_window(cmd or {})
+	local gui_window = window:gui_window()
+	gui_window:perform_action(wezterm.action.ToggleFullScreen, pane)
+	pane:split({})
+	pane:activate()
+end)
 
 config.leader = { key = "a", mods = "CTRL", timeout_milliseconds = 1000 }
 config.keys = {

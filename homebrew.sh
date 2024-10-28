@@ -26,7 +26,7 @@ apps=(
   firefox
   zoxide
   starship
-  visual-studio-code
+  zed
   wezterm
   ripgrep
   neovim

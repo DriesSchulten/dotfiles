@@ -27,7 +27,6 @@ ln -sfv "$DOTFILES_DIR/fish/fish_plugins" ~/.config/fish/
 
 ln -sfv "$DOTFILES_DIR/starship/starship.toml" ~/.config/
 ln -sfv "$DOTFILES_DIR/mise" ~/.config/mise
-ln -sfv "$DOTFILES_DIR/tmux/.tmux.conf" ~/.tmux.conf
 ln -sfv "$DOTFILES_DIR/nvim" ~/.config/nvim
 
 fish "$DOTFILES_DIR/fish/fisher-setup.fish"

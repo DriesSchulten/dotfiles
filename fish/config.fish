@@ -1,5 +1,5 @@
 set -Ux SHELL /opt/homebrew/bin/fish
-set -Ux EDITOR "code -w"
+set -Ux EDITOR "zed -n --wait"
 
 set -U fish_greeting
 
@@ -18,5 +18,6 @@ end
 alias ls="eza --icons=always"
 abbr -a lla "ls -la"
 abbr -a lt "ls --tree"
+abbr -a mvn "mvn -T 1C"
 
 alias cd="z"

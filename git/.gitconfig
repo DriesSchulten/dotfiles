@@ -16,7 +16,7 @@
 [alias]
   hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
   st = status --short --branch
-	prune-local = ! "git for-each-ref --format '%(refname:short) %(upstream:track)' | awk '$2 == \"[gone]\" {print $1}' | xargs -r git branch -D"
+  prune-local = ! "git for-each-ref --format '%(refname:short) %(upstream:track)' | awk '$2 == \"[gone]\" {print $1}' | xargs -r git branch -D"
 [color]
   branch = auto
   diff = auto
@@ -58,3 +58,5 @@
 [gpg "ssh"]
   allowedSignersFile = /Users/dries/.ssh/allowed_signers
   program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+[fetch]
+  prune = true

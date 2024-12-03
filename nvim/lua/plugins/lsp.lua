@@ -190,7 +190,7 @@ return {
           '/Users/dries/.local/share/nvim/mason/packages/jdtls/workspace/' .. vim.fn.fnamemodify(vim.fn.getcwd(), ':p:h:t'),
         },
       },
-      ['kotlin-language-server'] = {},
+      kotlin_language_server = {},
 
       lua_ls = {
         -- cmd = {...},

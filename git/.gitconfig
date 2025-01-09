@@ -17,6 +17,8 @@
   hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
   st = status --short --branch
   prune-local = ! "git for-each-ref --format '%(refname:short) %(upstream:track)' | awk '$2 == \"[gone]\" {print $1}' | xargs -r git branch -D"
+  commit-include = commit --amend --no-edit
+  push-force = push --force-with-lease --force-if-includes
 [color]
   branch = auto
   diff = auto

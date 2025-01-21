@@ -6,6 +6,7 @@ set -U fish_greeting
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 fish_add_path "/Users/dries/.cargo/bin"
+fish_add_path "/Users/dries/.local/bin"
 fish_add_path "/Users/dries/Library/Application Support/JetBrains/Toolbox/scripts"
 
 starship init fish | source

@@ -5,9 +5,12 @@
   ui = true
 [user]
   name = Dries Schulten
-  email = dries@skyworkz.nl
+  email = {{ onepasswordRead "op://personal/MacBook Pro GIT/email" }}
+  signingkey = {{ onepasswordRead "op://personal/MacBook Pro GIT/public key" }}
 [core]
   excludesfile = /Users/dries/.gitignore_global
+[commit]
+  gpgsign = true
 [push]
   default = simple
   autoSetupRemote = true
@@ -24,22 +27,10 @@
   diff = auto
   interactive = auto
   status = auto
-[merge]
-  tool = smerge
-[mergetool "smerge"]
-  cmd = smerge mergetool "$BASE" "$LOCAL" "$REMOTE" -o "$MERGED"
-  trustExitCode = true
-[color "diff-highlight"]
-  oldNormal = red bold
-  oldHighlight = red bold 52
-  newNormal = green bold
-  newHighlight = green bold 22
 [rebase]
   autostash = true
 [rerere]
   enabled = true
-[diff]
-  indentHeuristic = true
 [filter "lfs"]
   clean = git-lfs clean -- %f
   smudge = git-lfs smudge -- %f
@@ -53,8 +44,6 @@
   path = ~/.gitconfig-skyworkz
 [includeIf "gitdir:~/Projects/H4H/"]
   path = ~/.gitconfig-h4h
-[includeIf "gitdir:~/Projects/Default/"]
-  path = ~/.gitconfig-default
 [gpg]
   format = ssh
 [gpg "ssh"]

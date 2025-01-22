@@ -14,11 +14,9 @@ case "$(uname -s)" in
 Darwin)
     if ! [ -x "$HOMEBREW_PREFIX/bin/brew" ]; then
         echo >&2 "Installing homebrew"
-        "$CHEZMOI_COMMAND_DIR/scripts/macos/install-brew" -s "$HOMEBREW_PREFIX" || {
-            rm -rf "$HOMEBREW_PREFIX"
-            echo >&2 "Failed to install homebrew"
-            exit 1
-        }
+        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+        eval "$(/opt/homebrew/bin/brew shellenv)"
+        brew analytics off
     fi
 
     if command -v brew >/dev/null 2>&1; then
@@ -38,7 +36,8 @@ Linux)
         exit 1
         ;;
     esac
-    wget "https://cache.agilebits.com/dist/1P/op2/pkg/v2.30.3/op_linux_${ARCH}_v2.30.3.zip" -O "$tmpdir/op.zip" &&
+    OP_VERSION="v$(curl https://app-updates.agilebits.com/check/1/0/CLI2/en/2.0.0/N -s | grep -Eo '[0-9]+\.[0-9]+\.[0-9]+')";
+    wget "https://cache.agilebits.com/dist/1P/op2/pkg/${OP_VERSION}/op_linux_${ARCH}_${OP_VERSION}.zip" -O "$tmpdir/op.zip" &&
         unzip -d ~/.local/bin "$tmpdir/op.zip" op
     chmod +x ~/.local/bin/op
     ;;

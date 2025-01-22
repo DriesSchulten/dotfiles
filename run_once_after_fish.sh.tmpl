@@ -1,0 +1,10 @@
+#!/bin/sh
+{{ if eq .chezmoi.os "darwin" }}
+user_shell=$(finger $USER | grep 'Shell:*' | cut -f3 -d ":" | xargs)
+if [ "$user_shell" != "/opt/homebrew/bin/fish" ]; then
+    grep "/opt/homebrew/bin/fish" /private/etc/shells >/dev/null 2>&1 || echo /opt/homebrew/bin/fish | sudo tee -a /private/etc/shells
+    chsh -s /opt/homebrew/bin/fish
+fi
+{{ else }}
+chsh -s /usr/bin/fish
+{{ end -}}

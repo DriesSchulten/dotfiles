@@ -1,9 +1,11 @@
 {{ if eq .chezmoi.os "linux" -}}
 #!/bin/bash
 
-# EZA
+# Basics
 sudo apt update
-sudo apt install -y gpg
+sudo apt install -y gpg wget build-essential
+
+# EZA
 sudo mkdir -p /etc/apt/keyrings
 wget -qO- https://raw.githubusercontent.com/eza-community/eza/main/deb.asc | sudo gpg --dearmor -o /etc/apt/keyrings/gierens.gpg
 echo "deb [signed-by=/etc/apt/keyrings/gierens.gpg] http://deb.gierens.de stable main" | sudo tee /etc/apt/sources.list.d/gierens.list
@@ -21,6 +23,6 @@ tar xf "$tmpdir/fzf.tar.gz" -C ~/.local/bin
 curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
 
 # Starship
-curl -sS https://starship.rs/install.sh | sh
+curl -sS https://starship.rs/install.sh | sh -s -- --bin-dir ~/.local/bin
 
 {{ end -}}

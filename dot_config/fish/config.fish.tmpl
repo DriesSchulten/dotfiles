@@ -1,0 +1,30 @@
+set -U fish_greeting
+
+{{ if eq .chezmoi.os "darwin" }}
+eval "$(/opt/homebrew/bin/brew shellenv)"
+set -gx EDITOR "zed -n --wait"
+fish_add_path "~/.cargo/bin"
+fish_add_path "~/Library/Application Support/JetBrains/Toolbox/scripts"
+{{ else }}
+set -gx EDITOR "nvim"
+{{ end }}
+fish_add_path "~/.local/bin"
+
+if status is-interactive
+  starship init fish | source
+  zoxide init fish | source
+{{ if eq .chezmoi.os "linux" }}
+  if not set -q TMUX && set -q SSH_TTY
+    exec tmux new-session -A -s (hostname)
+  end
+{{ end }}
+else if command -q mise
+  mise activate fish --shims | source
+end
+
+alias ls="eza --icons=always"
+abbr -a lla "ls -la"
+abbr -a lt "ls --tree"
+abbr -a mvn "mvn -T 1C"
+
+alias cd="z"

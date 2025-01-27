@@ -40,3 +40,5 @@ contents.xcworkspacedata
 
 .mise.toml
 mise.toml
+
+kls_database.db

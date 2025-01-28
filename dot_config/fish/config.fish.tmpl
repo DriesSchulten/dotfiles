@@ -3,12 +3,11 @@ set -U fish_greeting
 {{ if eq .chezmoi.os "darwin" }}
 eval "$(/opt/homebrew/bin/brew shellenv)"
 set -gx EDITOR "zed -n --wait"
-fish_add_path "~/.cargo/bin"
-fish_add_path "~/Library/Application Support/JetBrains/Toolbox/scripts"
+fish_add_path ~/Library/Application\ Support/JetBrains/Toolbox/scripts
 {{ else }}
 set -gx EDITOR "nvim"
 {{ end }}
-fish_add_path "~/.local/bin"
+fish_add_path ~/.local/bin
 
 if status is-interactive
   starship init fish | source

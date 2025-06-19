@@ -11,6 +11,7 @@ fish_add_path ~/.local/bin
 
 if status is-interactive
   starship init fish | source
+  enable_transience
   zoxide init fish | source
 {{ if eq .chezmoi.os "linux" }}
   if not set -q TMUX && set -q SSH_TTY

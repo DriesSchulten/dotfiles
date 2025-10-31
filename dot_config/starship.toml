@@ -23,3 +23,6 @@ format = '\([$symbol($version)]($style)\) '
 
 [git_branch]
 format = '[$symbol$branch(:$remote_branch)]($style) '
+
+[scala]
+format = '\([${symbol}(${version})]($style)\)'

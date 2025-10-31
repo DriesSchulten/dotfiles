@@ -9,7 +9,7 @@ packages:
       - "git"
       - "jq"
       - "mise"
-      - "neovim"
+      - "helix"
       - "pre-commit"
       - "ripgrep"
       - "rustup"

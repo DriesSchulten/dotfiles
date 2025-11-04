@@ -5,6 +5,7 @@ java = "temurin-21"
 node = "latest"
 python = "latest"
 go = "latest"
+sbt = "latest"
 
 [settings]
 idiomatic_version_file_enable_tools = ["node", "java"]

@@ -1,8 +1,6 @@
 font-size = 11
 theme = Catppuccin Mocha
 window-save-state = always
-adjust-cell-width = -5%
-adjust-cell-height = -5%
 background-blur-radius = 20
 background-opacity = 0.9
 

@@ -23,6 +23,7 @@
   commit-include = commit --amend --no-edit
   push-force = push --force-with-lease --force-if-includes
   sync-main = ! "git checkout main && git pull && git fetch --prune && git prune-local"
+  rebase-main = ! "git sync-main && git checkout - && git rebase main"
   sweep = ! "git branch --merged main | grep -v '^[ *]*main$' | xargs git branch -d"
 [color]
   branch = auto

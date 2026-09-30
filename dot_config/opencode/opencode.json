@@ -11,11 +11,6 @@
       "type": "remote",
       "url": "http://127.0.0.1:64342/sse",
       "headers": {}
-    },
-    "webstorm": {
-      "type": "remote",
-      "url": "http://127.0.0.1:64542/sse",
-      "headers": {}
     }
   },
   "permission": {

@@ -1,6 +1,6 @@
 ---
 description: Implements focused code changes and verifies them with GPT-5.6 Sol.
-model: github-copilot/gpt-6-sol
+model: github-copilot/gpt-6.1-sol
 color: success
 permission:
   bash: allow

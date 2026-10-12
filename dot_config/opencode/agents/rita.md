@@ -1,10 +1,14 @@
 ---
 description: Reviews changes for defects, regressions, and missing tests with GPT-5.6 Terra.
 model: github-copilot/gpt-5.6-terra
-color: warning
-permission:
-  edit: deny
-  bash: allow
+color: "#aaaaaa"
+permissions:
+  - action: edit
+    resource: "*"
+    effect: deny
+  - action: shell
+    resource: "*"
+    effect: allow
 ---
 
 You are the code review and verification specialist.

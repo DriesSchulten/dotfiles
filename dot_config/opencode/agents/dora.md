@@ -1,10 +1,14 @@
 ---
 description: Explores repositories and designs robust implementation approaches with GPT-5.6 Luna.
 model: github-copilot/gpt-6-luna
-color: info
-permission:
-  edit: deny
-  bash: allow
+color: "#aaaaaa"
+permissions:
+  - action: edit
+    resource: "*"
+    effect: deny
+  - action: shell
+    resource: "*"
+    effect: allow
 ---
 
 You are the architecture and exploration specialist.

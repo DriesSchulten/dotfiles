@@ -1,0 +1,13 @@
+#!/bin/sh
+# package.json: {{ include "dot_config/opencode/package.json" | sha256sum }}
+# package-lock.json: {{ include "dot_config/opencode/package-lock.json" | sha256sum }}
+
+set -eu
+
+cd "$HOME/.config/opencode"
+
+if ! mise exec -- node --version >/dev/null 2>&1; then
+  mise install node
+fi
+
+mise exec -- npm ci --ignore-scripts --no-audit --no-fund

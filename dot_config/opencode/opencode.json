@@ -1,26 +1,36 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "instructions": ["~/.config/opencode/codebase-memory.md", "~/.config/opencode/work.md"],
+  "instructions": [],
   "mcp": {
-    "codebase-memory-mcp": {
-      "enabled": true,
-      "type": "local",
-      "command": ["/Users/dries/.local/bin/codebase-memory-mcp"]
-    },
-    "idea": {
-      "type": "remote",
-      "url": "http://127.0.0.1:64342/sse",
-      "headers": {}
+    "servers": {
+      "codebase-memory-mcp": {
+        "disabled": false,
+        "type": "local",
+        "command": ["/Users/dries/.local/bin/codebase-memory-mcp"]
+      },
+      "idea": {
+        "type": "remote",
+        "url": "http://127.0.0.1:64342/stream",
+        "headers": {}
+      }
     }
   },
-  "permission": {
-    "external_directory": {
-      "~/Projects/**": "allow",
-      "~/Library/Application Support/rtk/**": "allow"
+  "permissions": [
+    {
+      "action": "external_directory",
+      "resource": "~/Projects/**",
+      "effect": "allow"
     },
-    "edit": {
-      "/tmp/**": "allow"
+    {
+      "action": "external_directory",
+      "resource": "~/Library/Application Support/rtk/**",
+      "effect": "allow"
+    },
+    {
+      "action": "edit",
+      "resource": "/tmp/**",
+      "effect": "allow"
     }
-  },
+  ],
   "shell": "~/.config/opencode/opencode-agent-shell.sh"
 }

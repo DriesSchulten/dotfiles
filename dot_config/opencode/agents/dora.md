@@ -1,7 +1,7 @@
 ---
-description: Explores repositories and designs robust implementation approaches with GPT-5.6 Luna.
+description: Explores repositories and designs robust implementation approaches.
 model: github-copilot/gpt-6-luna
-color: "#aaaaaa"
+color: "#89b4fa"
 permissions:
   - action: edit
     resource: "*"

@@ -1,7 +1,7 @@
 ---
-description: Reviews changes for defects, regressions, and missing tests with GPT-5.6 Terra.
+description: Reviews changes for defects, regressions, and missing tests.
 model: github-copilot/gpt-5.6-terra
-color: "#aaaaaa"
+color: "#fab387"
 permissions:
   - action: edit
     resource: "*"

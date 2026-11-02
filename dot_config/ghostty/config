@@ -6,7 +6,8 @@ background-opacity = 0.9
 
 desktop-notifications = true
 
-macos-titlebar-style = transparent
+macos-titlebar-style = tabs
+window-theme = dark
 macos-titlebar-proxy-icon = hidden
 macos-option-as-alt = left
 

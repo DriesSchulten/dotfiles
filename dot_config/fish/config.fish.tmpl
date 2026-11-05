@@ -1,7 +1,17 @@
 set -U fish_greeting
 
 {{ if eq .chezmoi.os "darwin" }}
-eval "$(/opt/homebrew/bin/brew shellenv)"
+if not command -q brew
+    for prefix in $HOMEBREW_PREFIX /opt/homebrew /usr/local
+        if test -x "$prefix/bin/brew"
+            fish_add_path "$prefix/bin"
+            break
+        end
+    end
+end
+if command -q brew
+    brew shellenv fish | source
+end
 set -gx EDITOR "zed -n --wait"
 fish_add_path ~/Library/Application\ Support/JetBrains/Toolbox/scripts
 {{ else }}

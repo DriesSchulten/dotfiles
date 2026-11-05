@@ -1,7 +1,11 @@
 #!/bin/sh
 
-HOMEBREW_PREFIX="${HOMEBREW_PREFIX:-/opt/homebrew}"
-PATH="$HOMEBREW_PREFIX/bin:$HOME/.local/bin:$PATH"
+set -e
+
+export PATH="$HOME/.local/bin:$PATH"
+if [ "$(uname -s)" = Darwin ]; then
+    export PATH="${HOMEBREW_PREFIX:-/opt/homebrew}/bin:/usr/local/bin:$PATH"
+fi
 
 if command -v op >/dev/null 2>&1; then
     exit
@@ -9,16 +13,16 @@ fi
 
 case "$(uname -s)" in
 Darwin)
-    if ! [ -x "$HOMEBREW_PREFIX/bin/brew" ]; then
+    if ! command -v brew >/dev/null 2>&1; then
         echo >&2 "Installing homebrew"
-        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-        eval "$(/opt/homebrew/bin/brew shellenv)"
+        installer=$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)
+        /bin/bash -c "$installer"
         brew analytics off
     fi
 
-    if command -v brew >/dev/null 2>&1; then
-        brew install 1password-cli
-    fi
+    eval "$(brew shellenv sh)"
+    brew install --cask 1password-cli
+    op --version >/dev/null
     ;;
 Linux)
     case "$(uname -m)" in

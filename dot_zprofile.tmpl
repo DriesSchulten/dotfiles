@@ -1,0 +1,13 @@
+{{ if eq .chezmoi.os "darwin" -}}
+if ! command -v brew >/dev/null 2>&1; then
+    for prefix in "$HOMEBREW_PREFIX" /opt/homebrew /usr/local; do
+        if [ -x "$prefix/bin/brew" ]; then
+            export PATH="$prefix/bin:$PATH"
+            break
+        fi
+    done
+fi
+if command -v brew >/dev/null 2>&1; then
+    eval "$(brew shellenv zsh)"
+fi
+{{ end -}}

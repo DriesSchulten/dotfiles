@@ -2,4 +2,5 @@ README.md
 LICENSE
 {{- if ne .chezmoi.os "darwin" }}
 .git*
+.zprofile
 {{- end }}

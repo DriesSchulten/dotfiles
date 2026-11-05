@@ -17,6 +17,8 @@ packages:
       - "telnet"
       - "wget"
       - "zoxide"
+      - "lazygit"
+      - "opencode"
     casks:
       - "1password"
       - "1password-cli"

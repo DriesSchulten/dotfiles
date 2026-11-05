@@ -19,6 +19,7 @@ packages:
       - "zoxide"
       - "lazygit"
       - "opencode"
+      - "k9s"
     casks:
       - "1password"
       - "1password-cli"

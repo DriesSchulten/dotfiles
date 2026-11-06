@@ -26,5 +26,6 @@ keybind = ctrl+a>l=goto_split:right
 keybind = ctrl+a>b=equalize_splits
 keybind = ctrl+a>ctrl+a=text:\x1
 keybind = global:ctrl+grave_accent=toggle_quick_terminal
+keybind = global:ctrl+§=toggle_quick_terminal
 
 quick-terminal-size = 50%

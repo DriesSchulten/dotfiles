@@ -8,6 +8,10 @@
         "type": "local",
         "command": ["/Users/dries/.local/bin/codebase-memory-mcp"]
       },
+      "datadog": {
+        "type": "remote",
+        "url": "https://mcp.datadoghq.eu/v1/mcp?toolsets=core"
+      },
       "idea": {
         "type": "remote",
         "url": "http://127.0.0.1:64342/stream",

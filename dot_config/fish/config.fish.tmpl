@@ -13,6 +13,7 @@ if command -q brew
     brew shellenv fish | source
 end
 set -gx EDITOR "zed -n --wait"
+set -gx OP_BIOMETRIC_UNLOCK_ENABLED true
 fish_add_path ~/Library/Application\ Support/JetBrains/Toolbox/scripts
 {{ else }}
 set -gx EDITOR "hx"

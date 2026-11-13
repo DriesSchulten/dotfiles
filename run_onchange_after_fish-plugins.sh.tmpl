@@ -1,0 +1,14 @@
+#!/bin/sh
+# fish_plugins: {{ include "dot_config/fish/fish_plugins" | sha256sum }}
+
+set -eu
+export PATH="${HOMEBREW_PREFIX:-/opt/homebrew}/bin:/usr/local/bin:$PATH"
+
+if ! fish -c 'functions -q fisher'; then
+    installer=$(mktemp)
+    trap 'rm -f "$installer"' EXIT
+    curl -fsSL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish -o "$installer"
+    fish -c 'source "$argv[1]"; and fisher install jorgebucaran/fisher' -- "$installer"
+fi
+
+fish -c 'fisher update'

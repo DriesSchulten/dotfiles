@@ -1,0 +1,9 @@
+{{- if eq .chezmoi.os "darwin" -}}
+#!/bin/sh
+
+set -eu
+export PATH="${HOMEBREW_PREFIX:-/opt/homebrew}/bin:/usr/local/bin:$PATH"
+
+cd "$HOME"
+mise install
+{{ end -}}

@@ -6,7 +6,7 @@
       "codebase-memory-mcp": {
         "disabled": false,
         "type": "local",
-        "command": ["/Users/dries/.local/bin/codebase-memory-mcp"]
+        "command": [{{ printf "%s/.local/bin/codebase-memory-mcp" .chezmoi.homeDir | quote }}]
       },
       "datadog": {
         "type": "remote",

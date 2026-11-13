@@ -1,0 +1,15 @@
+#!/bin/bash
+
+set -euo pipefail
+export PATH="$HOME/.local/bin:${HOMEBREW_PREFIX:-/opt/homebrew}/bin:/usr/local/bin:$PATH"
+
+if ! command -v opencode >/dev/null 2>&1; then
+    printf '%s\n' 'OpenCode must be installed before configuring Codebase Memory.' >&2
+    exit 1
+fi
+
+if [ ! -x "$HOME/.local/bin/codebase-memory-mcp" ]; then
+    curl -fsSL https://raw.githubusercontent.com/DeusData/codebase-memory-mcp/main/install.sh | bash
+fi
+
+"$HOME/.local/bin/codebase-memory-mcp" config set auto_index true

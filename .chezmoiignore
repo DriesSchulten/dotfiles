@@ -3,4 +3,6 @@ LICENSE
 {{- if ne .chezmoi.os "darwin" }}
 .git*
 .zprofile
+.ssh/config
+.config/1Password
 {{- end }}

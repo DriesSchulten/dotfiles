@@ -8,7 +8,9 @@ if [ "$(uname -s)" = Darwin ]; then
 fi
 
 if command -v op >/dev/null 2>&1; then
-    exit
+    if [ "$(uname -s)" != Darwin ] || [ -d /Applications/1Password.app ] || [ -d "$HOME/Applications/1Password.app" ]; then
+        exit
+    fi
 fi
 
 case "$(uname -s)" in
@@ -21,10 +23,11 @@ Darwin)
     fi
 
     eval "$(brew shellenv sh)"
-    brew install --cask 1password-cli
+    brew install --cask 1password 1password-cli
     op --version >/dev/null
     ;;
 Linux)
+    mkdir -p "$HOME/.local/bin"
     case "$(uname -m)" in
     x86_64)
         ARCH=amd64

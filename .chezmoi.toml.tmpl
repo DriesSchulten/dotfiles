@@ -1,0 +1,12 @@
+{{- $_ := output "/bin/sh" (joinPath .chezmoi.sourceDir ".install-password-manager.sh") -}}
+{{- $op := lookPath "op" -}}
+{{- if not $op -}}
+{{- $op = findExecutable "op" (list (joinPath .chezmoi.homeDir ".local/bin") "/opt/homebrew/bin" "/usr/local/bin") -}}
+{{- end -}}
+
+[hooks.read-source-state.pre]
+command = "/bin/sh"
+args = [{{ joinPath .chezmoi.sourceDir ".install-password-manager.sh" | quote }}]
+
+[onepassword]
+command = {{ $op | quote }}

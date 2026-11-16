@@ -1,26 +1,32 @@
 {{ if eq .chezmoi.os "darwin" -}}
+{{- $brews := .packages.darwin.brews -}}
+{{- $casks := .packages.darwin.casks -}}
+{{- if (get . "work") -}}
+{{- $brews = concat $brews .packages.darwin.workBrews -}}
+{{- $casks = concat $casks .packages.darwin.workCasks -}}
+{{- end -}}
 #!/bin/bash
 
 set -e
 export PATH="${HOMEBREW_PREFIX:-/opt/homebrew}/bin:/usr/local/bin:$PATH"
 eval "$(brew shellenv bash)"
 
-{{ range .packages.darwin.brews -}}
+{{ range $brews -}}
 {{ if contains "/" . -}}
 brew trust --formula {{ . | quote }}
 {{ end -}}
 {{ end -}}
-{{ range .packages.darwin.casks -}}
+{{ range $casks -}}
 {{ if contains "/" . -}}
 brew trust --cask {{ . | quote }}
 {{ end -}}
 {{ end -}}
 
 brew bundle --file=/dev/stdin <<EOF
-{{ range .packages.darwin.brews -}}
+{{ range $brews -}}
 brew {{ . | quote }}
 {{ end -}}
-{{ range .packages.darwin.casks -}}
+{{ range $casks -}}
 cask {{ . | quote }}
 {{ end -}}
 EOF

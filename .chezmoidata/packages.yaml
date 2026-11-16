@@ -10,7 +10,6 @@ packages:
       - "jq"
       - "mise"
       - "helix"
-      - "pre-commit"
       - "ripgrep"
       - "rustup"
       - "starship"
@@ -19,14 +18,15 @@ packages:
       - "zoxide"
       - "lazygit"
       - "opencode"
-      - "k9s"
-      - "atlassian/acli/acli"
       - "btop"
       - "gh"
       - "helm"
-      - "azure/kubelogin/kubelogin"
       - "rtk"
       - "timewarrior"
+    workBrews:
+      - "atlassian/acli/acli"
+      - "azure/kubelogin/kubelogin"
+      - "k9s"
     casks:
       - "1password"
       - "1password-cli"
@@ -45,3 +45,5 @@ packages:
       - "spotify"
       - "whatsapp"
       - "zed"
+    workCasks:
+      - "viscosity"

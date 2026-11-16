@@ -21,10 +21,6 @@ After setup, open a new terminal and run `op --version` to verify the CLI is ava
 Enable the 1Password SSH agent manually under **Settings → Developer**; SSH configuration and vault selections are managed here.
 Rex must be installed manually while it is in beta; its keybindings are managed here, and Ghostty remains available.
 
-Setup installs all globally configured Mise tools once and synchronizes Fish plugins whenever `fish_plugins` changes.
-It also installs Codebase Memory when missing and enables automatic indexing once.
-On macOS, `kubectl` is provided by OrbStack rather than Helm or Kubelogin.
-
 Installs and configures:
 * [fish](https://fishshell.com) with the [fisher](https://github.com/jorgebucaran/fisher) plugin manager
 * [Homebrew](http://brew.sh/) with most dev tooling I use

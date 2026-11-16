@@ -1,5 +1,9 @@
 README.md
 LICENSE
+{{- if not (get . "work") }}
+.sbt/.artifactory-credentials-jfrog
+.gradle/gradle.properties
+{{- end }}
 {{- if ne .chezmoi.os "darwin" }}
 .git*
 .zprofile

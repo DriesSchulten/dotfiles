@@ -1,3 +1,4 @@
+{{- $work := promptBoolOnce . "work" "Enable work-specific configuration" false -}}
 {{- $_ := output "/bin/sh" (joinPath .chezmoi.sourceDir ".install-password-manager.sh") -}}
 {{- $op := lookPath "op" -}}
 {{- if not $op -}}
@@ -10,3 +11,6 @@ args = [{{ joinPath .chezmoi.sourceDir ".install-password-manager.sh" | quote }}
 
 [onepassword]
 command = {{ $op | quote }}
+
+[data]
+work = {{ $work }}

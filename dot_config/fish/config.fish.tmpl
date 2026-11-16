@@ -19,6 +19,7 @@ fish_add_path ~/Library/Application\ Support/JetBrains/Toolbox/scripts
 set -gx EDITOR "hx"
 {{ end }}
 fish_add_path ~/.local/bin
+set -g fzf_history_opts --height=100% --layout=reverse-list
 
 if status is-interactive
   starship init fish | source

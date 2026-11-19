@@ -1,6 +1,6 @@
 ---
 description: Implements focused code changes and verifies them.
-model: github-copilot/gpt-6.1-sol
+model: github-copilot/gpt-6.2-sol
 color: "#a6e3a1"
 permissions:
   - action: shell
